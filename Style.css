@@ -1,0 +1,96 @@
+header {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.mi-header {
+  background-color: rgb(255, 240, 173);
+}
+
+
+main {
+  margin-top: 50px;
+}
+
+main h2 {
+  font-family: "Yeseva One", serif;
+  color: #048a21;
+  font-size: 2.5rem;
+  margin-right: 400px;
+  margin-top: 90px;
+}
+
+main p {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.mi-boton {
+  border-radius: 25px;
+} 
+
+.mi-logo {
+ margin-left: 400px;
+ width: 40px;
+}
+
+.introducción {
+  width: 50%; 
+  max-width: 300px; 
+  margin-left: 300px;
+  margin-top: 15px;
+}
+
+.circulos {
+  position: relative;
+  width: 400px; 
+  height: 320px;
+  margin-left: 600px; 
+  margin-top: -500px; 
+}
+
+
+.circulo {
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute; 
+}
+
+
+.grande {
+  width: 180px;
+  height: 180px;
+  left: 80px;
+  top: 60px;
+}
+
+.mediano {
+  width: 120px;
+  height: 120px;
+  left: 200px;
+  top: 0;
+}
+
+.pequeño {
+  width: 160px;
+  height: 160px;
+  left: 200px;
+  top: 160px;
+}
+
+
+.circulo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
