@@ -1,15 +1,15 @@
-body{
+body {
   background-size: cover;
 }
 
-h2{
+h2 {
   text-align: center;
   color: rgb(27, 0, 46);
   font-family: 'Yeseva One', serif;
   font-size: 40px;
 }
 
-p{
+p {
   text-align: center;
   color: rgb(27, 0, 46);
   font-family: 'Poppins', sans-serif;
@@ -17,6 +17,6 @@ p{
   font-weight: 300;
 }
 
-placeholder{
-  text-align: center;
+.recuerdame {
+  font-size: 10px;
 }
