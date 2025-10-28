@@ -13,27 +13,37 @@
     rel="stylesheet">
 </head>
 
-<body class="bg-info-subtle">
-
+<body class="backgroun-image: cover;">
+<!--contenedor de imagen de perfil del usuario-->
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
 
   <!-- Segunda opción de diseño -->
   <div class="IniciarSesión justify-content-center align-content-center text-center m-5 ">
-    <div class="container border-radius:15px shadow-lg d-flex flex-column justify-content-center align-items-center"
-      style=" background-image: url(sun-tornado.svg);">
+    <div
+      class="container border border-0 border-radius:15%  shadow-lg d-flex flex-column justify-content-center align-items-center"
+      id="cont-bloque" style=" background-color: #f8f9fa;">
       <div class="m-3">
         <h2>Bienvenido</h2>
       </div>
-      <div class=" justify-content-center align-content-center text-center">
-        <p>Usuario o Empresa</p>
-        <input type="text" style="border-radius:20px;" placeholder="Introduce texto">
+      <div class=" justify-content-center align-content-center text-center m-2">
+        <p class="m-2">Nombre de Usuario</p>
+        <input type="text" style="border-radius:20px; " class="form-control shadow-sm" placeholder="Introduce texto">
       </div>
 
-      <div class="justify-content-center align-content-center m-5 text-center">
-        <p>Contraseña</p>
-        <input type="text" style="border-radius:20px" placeholder="Introduce texto">
+      <div class="justify-content-center align-content-center m-3 text-center">
+        <p class="m-2">Contraseña</p>
+        <input type="password" class="form-control shadow-sm" style="border-radius:20px;" placeholder="Introduce texto">
+        <a class=" d-flex text-center align-items-center m-2 small" id="detalles" href=" #"> Olvidé mi Contraseña</a>
       </div>
+      
 
-      <a class=" d-flex text-center" href=" #"> Olvidé mi Contraseña</a>
 
       <div class="container d-flex text-center gap-3 align-items-center justify-content-center">
         <div class="form-check form-switch justify-content-center d-flex align-items-center mb-3">
@@ -43,7 +53,7 @@
       </div>
 
       <div class=" justify-content-between align-content-center align-items-center m-3">
-        <div class="btn btn-success rounded-pill m-3"> Iniciar Sesión </div>
+        <div class="btn btn-success rounded-pill m-2 fs-4"> Iniciar Sesión </div>
 
         <div class="d-flex align-items-center justify-content-center m-2">
           <hr class="flex-grow-1 mx-2">
@@ -59,14 +69,15 @@
           <img src="assets/apple-icon.png" alt="google-icon" class="btn btn-light rounded-pill"
             style="background-color: #fff0ad; height: 3rem;">
         </div>
-            <div class="text-center">¿Eres nuevo?</div>
-            <div class="text-center"><a href="Registrarse.html"> Crea una cuenta</a></div>
-          </div>
+        <div id="detalles">
+          <div class="text-center">¿Eres nuevo?</div>
+          <div class="text-center"><a href="Registrarse.html"> Crea una cuenta</a></div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Primera opción de diseño 
+  <!-- Primera opción de diseño 
   <div
     class="card container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-light position-relative"
     style="max-width: 540px;">
@@ -119,9 +130,9 @@
       </div>
     </div>
   </div>-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

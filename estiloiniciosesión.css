@@ -1,13 +1,11 @@
 @media (min-width: 768px) {
 
   body {
-    background-size: cover;
+    background-size: contain;
     background-color: #ffffff;
-    background-image: url("assets/curves-bg.svg");
-    /* las curvas suaves del fondo */
-    background-repeat: no-repeat;
+    background-image: url("assets/sun-tornado.svg");
+    background-repeat: repeat;
     background-position: center;
-    background-size: cover;
   }
 
   h2 {
@@ -25,6 +23,15 @@
     font-weight: 300;
   }
 
+  .cont-bloque {
+    background-opacity: 0.8;
+
+  }
+
+  .detalles {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 9px;
+  }
 }
 
 @media (max-width: 768px)
