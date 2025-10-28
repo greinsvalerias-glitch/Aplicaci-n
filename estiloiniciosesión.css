@@ -1,4 +1,16 @@
+@media (min-width: 768px) {
+  body {
+    background-attachment: fixed;
+    /* Fija la imagen de fondo en pantallas más grandes */
+  }
+}
 body {
+  background-size: cover;
+  /* Asegura que la imagen de fondo cubra toda el área del cuerpo */
+   background-color: #ffffff;
+  background-image: url("assets/curves-bg.svg"); /* las curvas suaves del fondo */
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -13,10 +25,12 @@ p {
   text-align: center;
   color: rgb(27, 0, 46);
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 300;
 }
 
 .recuerdame {
   font-size: 10px;
 }
+
+
