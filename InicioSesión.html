@@ -18,20 +18,33 @@
 
   <!-- Segunda opción de diseño -->
   <div class="IniciarSesión text-center align-items-center">
-    <div
-      class="container rounded-4 shadow-lg d-flex flex-column justify-content-center align-items-center"
+    <div class="container rounded-4 shadow-lg d-flex flex-column justify-content-center align-items-center"
       style=" background-color: #f8f9fa;">
       <h2 class="m-3">Bienvenido</h2>
       <div class="row justify-content-center align-content-center">
-        <div class="col-md-5 col-sm-12">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/login-icon.svg" class="card-img-top" alt="...">
+        <div class="col-md-5 col-sm-12 mx-5">
+          <div class="card border border-0 " style="width: 18rem; background-color: #f8f9fa;">
+            <img src="assets/login-icon.svg" class="card-img-top img-fluid  " style="img">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card’s
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary fs-7 border-0 rounded-pill "  data-bs-toggle="modal" data-bs-target="#exampleModal">¡Selecciona tu foto de perfil!</a>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -47,7 +60,7 @@
               <p class="m-2">Contraseña</p>
               <input type="password" class="form-control shadow-sm" style="border-radius:20px;"
                 placeholder="Introduce texto">
-              <a class=" d-flex text-center align-items-center m-2 small" id="detalles" href=" #"> Olvidé mi
+              <a class=" d-flex text-center align-items-center m-2 small"  style=" background-color: #f8f9fa;" id="detalles" href=" #"> Olvidé mi
                 Contraseña</a>
             </div>
 
