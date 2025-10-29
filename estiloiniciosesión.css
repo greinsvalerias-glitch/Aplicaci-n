@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
 
   body {
-    background-size: contain;
+    background-size: cover;
     background-color: #ffffff;
     background-image: url("assets/sun-tornado.svg");
     background-repeat: repeat;
@@ -23,14 +23,11 @@
     font-weight: 300;
   }
 
-  .cont-bloque {
-    background-opacity: 0.8;
+  
 
-  }
-
-  .detalles {
+  #detalles {
     font-family: 'Public Sans', sans-serif;
-    font-size: 9px;
+    font-size: 12px;
   }
 }
 
