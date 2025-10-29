@@ -34,4 +34,34 @@
   }
 }
 
-@media (max-width: 768px)
+@media (max-width: 768px) {
+
+  body {
+    background-size: contain;
+    background-color: #ffffff;
+    background-image: url("assets/sun-tornado.svg");
+    background-repeat: repeat;
+    background-position: center;
+  }
+
+  h2 {
+    text-align: center;
+    color: rgb(27, 0, 46);
+    font-family: 'Yeseva One', serif;
+    font-size: 200%;
+  }
+
+  p {
+    text-align: center;
+    color: rgb(27, 0, 46);
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    font-weight: 300;
+  }
+
+  .detalles {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 9px;
+  }
+
+}
