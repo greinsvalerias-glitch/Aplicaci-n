@@ -26,7 +26,8 @@
           <div class="card border border-0 " style="width: 18rem; background-color: #f8f9fa;">
             <img src="assets/login-icon.svg" class="card-img-top img-fluid  " style="img">
             <div class="card-body">
-              <a href="#" class="btn btn-primary fs-7 border-0 rounded-pill "  data-bs-toggle="modal" data-bs-target="#exampleModal">¡Selecciona tu foto de perfil!</a>
+              <a href="#" class="btn btn-primary fs-7 border-0 rounded-pill " data-bs-toggle="modal"
+                data-bs-target="#exampleModal">¡Selecciona tu foto de perfil!</a>
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
@@ -60,49 +61,93 @@
               <p class="m-2">Contraseña</p>
               <input type="password" class="form-control shadow-sm" style="border-radius:20px;"
                 placeholder="Introduce texto">
-              <a class=" d-flex text-center align-items-center m-2 small"  style=" background-color: #f8f9fa;" id="detalles" href=" #"> Olvidé mi
+              <a class=" d-flex text-center align-items-center m-2 small" style=" background-color: #f8f9fa;"
+                id="detalles" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"> Olvidé mi
                 Contraseña</a>
-            </div>
 
-
-
-            <div class="container d-flex text-center gap-3 align-items-center justify-content-center">
-              <div class="form-check form-switch justify-content-center d-flex align-items-center mb-3">
-                <input class="form-check-input me-2" type="checkbox" style="background-color: #048a21;"
-                  id="empresaSwitch">
-                <label class="form-check-label small" for="empresaSwitch">Soy empresa</label>
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 fw-semibold" id="exampleModalToggleLabel">¡No te preocupes!</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p id="restaurarcotraseña">Porfavor, introduce tu correo electronico.</p>
+                      <div class="input-group flex-nowrap border-0 ">
+                        <span class="input-group-text  " id="addon-wrapping">
+                          <img src="assets/Mail-icon.svg" alt="email-icon">
+                        </span>
+                        <input type="text" class="form-control" placeholder="username.mail@gmail.com"
+                          aria-label="Username" aria-describedby="addon-wrapping">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success poppins-text rounded-pill " data-bs-target="#exampleModalToggle2"
+                        data-bs-toggle="modal">Ingresar Correo</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <div class=" justify-content-between align-content-center align-items-center m-3">
-              <div class="btn btn-success rounded-pill m-2 fs-4"> Iniciar Sesión </div>
-
-              <div class="d-flex align-items-center justify-content-center m-2">
-                <hr class="flex-grow-1 mx-2">
-                <div class="text-center text-secondary" id="opcionesdeinicio"> Iniciar sesión con</div>
-                <hr class="flex-grow-1 mx-2">
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 fw-semibold" id="exampleModalToggleLabel2">Revisa tu correo...</h1>
+                      <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p id="restaurarcotraseña">Acabamos de enviarte una contraseña provisional.</p>
+                      
+                        <img src="assets/happyface-green.svg" class="row mx-auto" style="height: 80px;">
+                        <p class="fw-bold row text-center justify-content-center" id="detalles">No olvides cambiar tu
+                        contraseña.</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div class="d-flex flex-row p-4 gap-3 justify-content-center align-items-center">
-                <img src="assets/google-icon.svg" alt="google-icon" class="btn btn-light rounded-pill"
-                  style=" background-color: #fff0ad; height: 3rem;">
-                <img src="assets/facebook-icon.png" alt="google-icon" class="btn btn-light rounded-pill"
-                  style="background-color: #fff0ad; height: 3rem;">
-                <img src="assets/apple-icon.png" alt="google-icon" class="btn btn-light rounded-pill"
-                  style="background-color: #fff0ad; height: 3rem;">
+
+
+              <div class="container d-flex text-center gap-3 align-items-center justify-content-center">
+                <div class="form-check form-switch justify-content-center d-flex align-items-center mb-3">
+                  <input class="form-check-input me-2" type="checkbox" style="background-color: #048a21;"
+                    id="empresaSwitch">
+                  <label class="form-check-label small" for="empresaSwitch">Soy empresa</label>
+                </div>
               </div>
-              <div id="detalles">
-                <div class="text-center">¿Eres nuevo?</div>
-                <div class="text-center"><a href="Registrarse.html"> Crea una cuenta</a></div>
+
+              <div class=" justify-content-between align-content-center align-items-center m-3">
+                <div class="btn btn-success rounded-pill m-2 fs-4"> Iniciar Sesión </div>
+
+                <div class="d-flex align-items-center justify-content-center m-2">
+                  <hr class="flex-grow-1 mx-2">
+                  <div class="text-center text-secondary" id="opcionesdeinicio"> Iniciar sesión con</div>
+                  <hr class="flex-grow-1 mx-2">
+                </div>
+
+                <div class="d-flex flex-row p-4 gap-3 justify-content-center align-items-center">
+                  <img src="assets/google-icon.svg" alt="google-icon" class="btn btn-light rounded-pill"
+                    style=" background-color: #fff0ad; height: 3rem;">
+                  <img src="assets/facebook-icon.png" alt="google-icon" class="btn btn-light rounded-pill"
+                    style="background-color: #fff0ad; height: 3rem;">
+                  <img src="assets/apple-icon.png" alt="google-icon" class="btn btn-light rounded-pill"
+                    style="background-color: #fff0ad; height: 3rem;">
+                </div>
+                <div id="detalles">
+                  <div class="text-center">¿Eres nuevo?</div>
+                  <div class="text-center"><a href="Registrarse.html"> Crea una cuenta</a></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Primera opción de diseño 
+    <!-- Primera opción de diseño 
   <div
     class="card container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-light position-relative"
     style="max-width: 540px;">
@@ -155,9 +200,9 @@
       </div>
     </div>
   </div>-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
