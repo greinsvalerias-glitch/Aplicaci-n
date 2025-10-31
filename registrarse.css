@@ -1,76 +1,79 @@
 @media (min-width: 768px) {
 
-  body {
-    background-size: contain;
-    background-color: #ffffff;
-    background-image: url("assets/endless-constellation.svg");
-    background-repeat: repeat;
-    background-position: center;
-  }
+    body {
+        background-size: contain;
+        background-color: #ffffff;
+        background-image: url("assets/endless-constellation.svg");
+        background-repeat: repeat;
+        background-position: center;
+    }
 
-  h1 {
-    font-family: 'Poppins', serif;
-  }
+    h1 {
+        font-family: 'Poppins', serif;
+    }
 
-  h2 {
-    text-align: center;
-    color: rgb(27, 0, 46);
-    font-family: 'Yeseva One', serif;
-    font-size: 300%;
-  }
+    h2 {
+        text-align: center;
+        color: rgb(27, 0, 46);
+        font-family: 'Yeseva One', serif;
+        font-size: 300%;
+    }
 
-  p {
-    text-align: center;
-    color: rgb(27, 0, 46);
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-  }
+    p {
+        text-align: center;
+        color: rgb(27, 0, 46);
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+    }
 
 
 
-  #detalles {
-    font-family: 'Public Sans', sans-serif;
-    font-size: 12px;
-  }
+    #detalles {
+        font-family: 'Public Sans', sans-serif;
+        font-size: 12px;
+    }
 
-  #restaurarcotraseña {
-    font-family: 'Public Sans', sans-serif;
-  }
+    #restaurarcotraseña {
+        font-family: 'Public Sans', sans-serif;
+    }
 }
 
 @media (max-width: 768px) {
 
-  body {
-    background-size: contain;
-    background-color: #ffffff;
-    background-image: url("assets/endless-constellation.svg");
-    background-repeat: repeat;
-    background-position: center;
-  }
+    body {
+        background-size: contain;
+        background-color: #ffffff;
+        background-image: url("assets/endless-constellation.svg");
+        background-repeat: repeat;
+        background-position: center;
+    }
 
-  h2 {
-    text-align: center;
-    color: rgb(27, 0, 46);
-    font-family: 'Yeseva One', serif;
-    font-size: 200%;
-  }
+    h2 {
+        text-align: center;
+        color: rgb(27, 0, 46);
+        font-family: 'Yeseva One', serif;
+        font-size: 200%;
+    }
 
-  p {
-    text-align: center;
-    color: rgb(27, 0, 46);
-    font-family: 'Poppins', sans-serif;
-    font-size: 9px;
-    font-weight: 300;
-  }
+    p {
+        text-align: center;
+        color: rgb(27, 0, 46);
+        font-family: 'Poppins', sans-serif;
+        font-size: 9px;
+        font-weight: 300;
+    }
 
-  #detalles {
-    font-family: 'Public Sans', sans-serif;
-    font-size: 9px;
-  }
+    #detalles {
+        font-family: 'Public Sans', sans-serif;
+        font-size: 9px;
+    }
 
-  #pfp{
-
-  }
+    #pfp {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
 
 }
