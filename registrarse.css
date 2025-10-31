@@ -44,7 +44,7 @@
   body {
     background-size: contain;
     background-color: #ffffff;
-    background-image: url("assets/sun-tornado.svg");
+    background-image: url("assets/endless-constellation.svg");
     background-repeat: repeat;
     background-position: center;
   }
@@ -64,9 +64,13 @@
     font-weight: 300;
   }
 
-  .detalles {
+  #detalles {
     font-family: 'Public Sans', sans-serif;
     font-size: 9px;
+  }
+
+  #pfp{
+
   }
 
 }
