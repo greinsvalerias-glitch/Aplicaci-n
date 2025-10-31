@@ -1,9 +1,9 @@
 @media (min-width: 768px) {
 
   body {
-    background-size: cover;
+    background-size: contain;
     background-color: #ffffff;
-    background-image: url("assets/sun-tornado.svg");
+    background-image: url("assets/endless-constellation.svg");
     background-repeat: repeat;
     background-position: center;
   }
