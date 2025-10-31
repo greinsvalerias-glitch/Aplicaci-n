@@ -17,54 +17,53 @@
   <!--contenedor de imagen de perfil del usuario-->
 
   <!-- Segunda opción de diseño -->
-  <div class="IniciarSesión text-center align-items-center">
+  <div class="IniciarSesión text-center align-items-center col-8"
+    style="margin: auto; padding-top: 5rem; padding-bottom: 5rem;">
     <div class="container rounded-4 shadow-lg d-flex flex-column justify-content-center align-items-center"
       style=" background-color: #f8f9fa;">
-      <h2 class="m-3">Bienvenido</h2>
+      <h2 class="m-5">Bienvenido</h2>
       <div class="row justify-content-center align-content-center">
         <div class="col-md-5 col-sm-12 mx-5">
           <div class="card border border-0 " style="width: 18rem; background-color: #f8f9fa;">
-            <img src="assets/login-icon.svg" class="card-img-top img-fluid  " style="img">
+            <img src="assets/login-icon.svg" class="card-img-top img-fluid">
             <div class="card-body">
-              <a href="#" class="btn btn-primary fs-7 border-0 rounded-pill " data-bs-toggle="modal"
-                data-bs-target="#exampleModal">¡Selecciona tu foto de perfil!</a>
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
-                    </div>
-                  </div>
-                </div>
+              <div id="detalles">
+                <div class="text-center fs-6">¿Esta no es tu cuenta?</div>
+                <div class="text-center"><a href="Soportetecnico.html"> Soporte Técnico</a></div>
               </div>
+              <!--este apartado es de ingresar la foto de perfil
+              <div class="input-group flex-nowrap">
+                <div class="input-group ">
+                  <label class="input-group-text btn-success" id="restaurarcotraseña">Selecciona tu foto de
+                    perfil</label>
+                  <input type="file" class="form-control" id="inputGroupFile01">
+                </div>
+                <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+                  <img src="assets/gallery-icon.svg">
+                </button>
+              </div>
+              -->
+
             </div>
           </div>
         </div>
         <div class="col-md-5 col-sm-12">
           <div class="container">
             <div class=" justify-content-center align-content-center text-center m-2">
-              <p class="m-2">Nombre de Usuario</p>
+              <p class="m-2 fw-medium">Nombre de Usuario</p>
               <input type="text" style="border-radius:20px; " class="form-control shadow-sm"
                 placeholder="Introduce texto">
             </div>
 
             <div class="justify-content-center align-content-center m-3 text-center">
-              <p class="m-2">Contraseña</p>
+              <p class="m-2 fw-medium">Contraseña</p>
               <input type="password" class="form-control shadow-sm" style="border-radius:20px;"
                 placeholder="Introduce texto">
               <a class=" d-flex text-center align-items-center m-2 small" style=" background-color: #f8f9fa;"
                 id="detalles" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"> Olvidé mi
                 Contraseña</a>
 
+              <!-- Modals(oculto) de olvide mi contraseña -->
               <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
                 aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
@@ -75,7 +74,7 @@
                     </div>
                     <div class="modal-body">
                       <p id="restaurarcotraseña">Porfavor, introduce tu correo electronico.</p>
-                      <div class="input-group flex-nowrap border-0 ">
+                      <div class="input-group flex-nowrap ">
                         <span class="input-group-text  " id="addon-wrapping">
                           <img src="assets/Mail-icon.svg" alt="email-icon">
                         </span>
@@ -100,9 +99,9 @@
                     </div>
                     <div class="modal-body">
                       <p id="restaurarcotraseña">Acabamos de enviarte una contraseña provisional.</p>
-                      
-                        <img src="assets/happyface-green.svg" class="row mx-auto" style="height: 80px;">
-                        <p class="fw-bold row text-center justify-content-center" id="detalles">No olvides cambiar tu
+
+                      <img src="assets/happyface-green.svg" class="row mx-auto" style="height: 80px;">
+                      <p class="fw-bold row text-center justify-content-center" id="detalles">No olvides cambiar tu
                         contraseña.</span>
                     </div>
                   </div>
@@ -120,7 +119,7 @@
               </div>
 
               <div class=" justify-content-between align-content-center align-items-center m-3">
-                <div class="btn btn-success rounded-pill m-2 fs-4"> Iniciar Sesión </div>
+                <div class="btn btn-success rounded-pill m-2 fs-4 fw-semibold"> Iniciar Sesión </div>
 
                 <div class="d-flex align-items-center justify-content-center m-2">
                   <hr class="flex-grow-1 mx-2">
