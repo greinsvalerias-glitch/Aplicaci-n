@@ -1,6 +1,7 @@
 header {
   background-color: #f8f9fa;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 80px;
 }
 
 header h1 {
@@ -17,12 +18,18 @@ main {
   margin-top: 50px;
 }
 
+.imagotipo {
+  width: 540px;
+  margin-left: -600px;
+  margin-top: -0px;
+}
+
 main h2 {
   font-family: "Yeseva One", serif;
-  color: #048a21;
-  font-size: 2.5rem;
-  margin-right: 400px;
-  margin-top: 90px;
+  color: #005412;
+  font-size: 70px;
+  margin-right: 600px;
+  margin-top: 170px;
 }
 
 main p {
@@ -30,25 +37,29 @@ main p {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 20px;
+  color: #005910;
 }
 
 .mi-boton {
   border-radius: 25px;
-  margin-left: 80px;
 } 
 
 .mi-logo {
- margin-left: 400px;
+ margin-left: 550px;
  width: 40px;
 }
 
-.introducción {
-  width: 50%; 
-  max-width: 300px; 
-  margin-left: 300px;
-  margin-top: 20px;
+.introduccion {
+  font-family: "Public Sans", sans-serif;
+  font-size: 25px;
+  color: #005910;
+  max-width: 420px;   /* ✅ A  PÁRRAFO */
+  margin: 20px auto;  /* ✅ CENTRADO */
+  text-align: center; /* ✅ PARRAFO CENTRADO */
+  line-height: 1.5;
+  margin-left: 140px; 
+  font-weight: 700;
 }
 
 .circulos {
@@ -56,7 +67,7 @@ main p {
   width: 400px; 
   height: 320px;
   margin-left: 600px; 
-  margin-top: 30px; 
+  margin-top: 20px; 
 }
 
 
@@ -68,25 +79,27 @@ main p {
 
 
 .grande {
-  width: 230px;
-  height: 230px;
-  left: 210px;
-  top: -100px;
-}
-
-.pequeño {
-  width: 150px;
-  height: 150px;
-  left: 350px;
-  top: -170px;
+  width: 350px;
+  height: 350px;
+  left: 160px;
+  top: -350px;   /* ⬆️ Subida */
 }
 
 .mediano {
-  width: 200px;
-  height: 200px;
-  left: 370px;
-  top: 0px;
+  width: 270px;
+  height: 270px;
+  left: 390px;
+  top: -160px;    /* ⬆️ Subida */
 }
+
+.pequeno,
+.pequeño { 
+  width: 230px;
+  height: 230px;
+  left: 380px;
+  top: -450px;   
+}
+
 
 
 .circulo img {
@@ -95,3 +108,71 @@ main p {
   border-radius: 50%;
 }
 
+.container-card {
+  width: 80%;
+  max-width: 1100px;
+}
+
+.left-card {
+  background: #fff1ba;
+  width: 70%;
+  border-radius: 20px 0 0 20px;
+}
+
+.user-icon {
+  position: relative;
+}
+
+.status {
+  width: 14px;
+  height: 14px;
+  background: #4caf50;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 4px;
+  right: -2px;
+}
+
+.big-box {
+  background: white;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  margin-top: 10px;
+}
+
+
+.right-card {
+  background: #ffe279;
+  width: 30%;
+  border-radius: 0 20px 20px 0;
+}
+
+.circle {
+  width: 55px;
+  height: 55px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.ubicacion-btn i {
+  color:#000000;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 45px;
+}
+
+.pabloparrilla {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.circulo:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.botones-header {
+  margin-left: 900px;
