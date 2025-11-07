@@ -157,12 +157,7 @@ main p {
   border-radius: 0 20px 20px 0;
 }
 
-.circle {
-  width: 55px;
-  height: 55px;
-  background: #ffffff;
-  border-radius: 50%;
-}
+
 
 .ubicacion-btn i {
   color: #000000;
@@ -333,4 +328,21 @@ main p {
   border-radius: 3px;
   opacity: 0.9;
   margin-top: -110px;
+}
+.circle {
+  width: 55px;
+  height: 55px;
+  background: #ffffff;
+  border-radius: 50%;
+  overflow: hidden; /* esto mantiene la forma circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-circle {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
