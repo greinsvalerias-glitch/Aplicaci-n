@@ -223,11 +223,6 @@ main p {
   padding: 10px;
 }
 
-
-
-
-
-
 * {
   box-sizing: border-box;
 }
@@ -267,10 +262,10 @@ main p {
 }
 
 .carousel-css .slide img {
-  display: block;
+
   width: 100%;
   height: auto;
-  vertical-align: middle;
+  vertical-align: auto;
 }
 
 #r1:checked ~ .slides label[for="r1"],
