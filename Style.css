@@ -13,7 +13,6 @@ header h1 {
   background-color: rgb(255, 240, 173);
 }
 
-
 main {
   margin-top: 50px;
 }
@@ -21,7 +20,7 @@ main {
 .imagotipo {
   width: 540px;
   margin-left: -600px;
-  margin-top: -0px;
+  margin-top: 0;
 }
 
 main h2 {
@@ -35,7 +34,7 @@ main h2 {
 main p {
   font-family: "Public Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
   font-size: 20px;
   color: #005910;
@@ -43,65 +42,60 @@ main p {
 
 .mi-boton {
   border-radius: 25px;
-} 
+}
 
 .mi-logo {
- margin-left: 550px;
- width: 40px;
+  margin-left: 550px;
+  width: 40px;
 }
 
 .introduccion {
   font-family: "Public Sans", sans-serif;
   font-size: 25px;
   color: #005910;
-  max-width: 420px;   /* ✅ A  PÁRRAFO */
-  margin: 20px auto;  /* ✅ CENTRADO */
-  text-align: center; /* ✅ PARRAFO CENTRADO */
+  max-width: 420px;
+  margin: 20px auto;
+  text-align: center;
   line-height: 1.5;
-  margin-left: 140px; 
+  margin-left: 140px;
   font-weight: 700;
 }
 
 .circulos {
   position: relative;
-  width: 400px; 
+  width: 400px;
   height: 320px;
-  margin-left: 600px; 
-  margin-top: 20px; 
+  margin-left: 600px;
+  margin-top: 20px;
 }
-
 
 .circulo {
   border-radius: 50%;
   object-fit: cover;
-  position: absolute; 
+  position: absolute;
 }
-
 
 .grande {
   width: 350px;
   height: 350px;
   left: 160px;
-  top: -350px;   /* ⬆️ Subida */
+  top: -350px;
 }
 
 .mediano {
   width: 270px;
   height: 270px;
   left: 390px;
-  top: -160px;    /* ⬆️ Subida */
+  top: -160px;
 }
 
 .pequeno,
-.pequeño { 
+.pequeño {
   width: 230px;
   height: 230px;
   left: 380px;
-  top: -450px;   
+  top: -450px;
 }
-
-
-
 
 .circulo img {
   width: 100%;
@@ -112,6 +106,7 @@ main p {
 .container-card {
   width: 80%;
   max-width: 1100px;
+  margin-top: -40px;
 }
 
 .left-card {
@@ -136,12 +131,25 @@ main p {
 
 .big-box {
   background: white;
-  height: 300px;
-  border-radius: 5px;
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
   border: 1px solid #e6e6e6;
   margin-top: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.img-publicacion {
+  width: 110%;
+  height: 110%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+  display: block;
+}
 
 .right-card {
   background: #ffe279;
@@ -157,7 +165,7 @@ main p {
 }
 
 .ubicacion-btn i {
-  color:#000000;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
   font-size: 45px;
@@ -208,7 +216,6 @@ main p {
   opacity: 1;
 }
 
-/* Estilo de los controles */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.5);
@@ -216,12 +223,51 @@ main p {
   padding: 10px;
 }
 
-* {box-sizing: border-box;}
-.carousel-css {position: relative; --small-w: 140px; --mid-w: 260px; --gap: 18px;}
-.carousel-css input {display:none;}
-.carousel-css .slides {display:flex; justify-content:center; align-items:center; gap: var(--gap); padding: 18px 12px; overflow: visible; user-select: none;}
-.carousel-css .slide {display:block; width: var(--small-w); transition: transform .45s ease, width .45s ease, opacity .45s ease; transform-origin: center; cursor: pointer; opacity: .55; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,.45); overflow: hidden; background:#111;}
-.carousel-css .slide img {display:block; width:100%; height:auto; vertical-align:middle;}
+* {
+  box-sizing: border-box;
+}
+
+.carousel-css {
+  position: relative;
+  --small-w: 140px;
+  --mid-w: 260px;
+  --gap: 18px;
+}
+
+.carousel-css input {
+  display: none;
+}
+
+.carousel-css .slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+  padding: 18px 12px;
+  overflow: visible;
+  user-select: none;
+}
+
+.carousel-css .slide {
+  display: block;
+  width: var(--small-w);
+  transition: transform 0.45s ease, width 0.45s ease, opacity 0.45s ease;
+  transform-origin: center;
+  cursor: pointer;
+  opacity: 0.55;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  background: #111;
+}
+
+.carousel-css .slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 #r1:checked ~ .slides label[for="r1"],
 #r2:checked ~ .slides label[for="r2"],
 #r3:checked ~ .slides label[for="r3"],
@@ -232,53 +278,59 @@ main p {
   opacity: 1;
   z-index: 3;
 }
+
 #r1:checked ~ .slides label[for="r2"],
 #r2:checked ~ .slides label[for="r3"],
 #r3:checked ~ .slides label[for="r4"],
 #r4:checked ~ .slides label[for="r5"] {
-  transform: translateX(-6px) scale(.95);
-  opacity:.7;
-  z-index:2;
+  transform: translateX(-6px) scale(0.95);
+  opacity: 0.7;
+  z-index: 2;
 }
+
 #r2:checked ~ .slides label[for="r1"],
 #r3:checked ~ .slides label[for="r2"],
 #r4:checked ~ .slides label[for="r3"],
 #r5:checked ~ .slides label[for="r4"] {
-  transform: translateX(6px) scale(.95);
-  opacity:.7;
-  z-index:2;
+  transform: translateX(6px) scale(0.95);
+  opacity: 0.7;
+  z-index: 2;
 }
-.carousel-css .action {margin-top:18px;}
-.carousel-css .action a {display:inline-block; padding:.6rem 1.25rem; letter-spacing:.12em; font-weight:600;}
+
+.carousel-css .action {
+  margin-top: 18px;
+}
+
+.carousel-css .action a {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+}
+
 @media (max-width: 768px) {
-  .carousel-css { --small-w: 90px; --mid-w: 150px; --gap: 10px;}
-  .carousel-css .slides {padding: 12px 6px;}
-  .carousel-css .action a {font-size: .9rem; padding:.5rem .9rem;}
+  .carousel-css {
+    --small-w: 90px;
+    --mid-w: 150px;
+    --gap: 10px;
+  }
+
+  .carousel-css .slides {
+    padding: 12px 6px;
+  }
+
+  .carousel-css .action a {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.9rem;
+  }
 }
 
-.big-box {
-  background: white;
-  width: 100%;
-  height: 300px;
-  border-radius: 8px;
-  border: 1px solid #e6e6e6;
-  margin-top: 10px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.linea-decorativa {
+  width: 80%;
+  margin: 40px auto 120px;
+  border: none;
+  border-top: 3px solid #008311;
+  border-radius: 3px;
+  opacity: 0.9;
+  margin-top: -110px;
 }
-
-.img-publicacion {
-  width: 110%;
-  height: 110%;
-  object-fit: contain;   /* 🔸 evita que se recorte la imagen */
-  object-position: center;
-  border-radius: 8px;
-  display: block;
-}
-
-
-
-
-
