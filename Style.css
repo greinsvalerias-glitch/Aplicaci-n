@@ -216,6 +216,68 @@ main p {
   padding: 10px;
 }
 
+* {box-sizing: border-box;}
+.carousel-css {position: relative; --small-w: 140px; --mid-w: 260px; --gap: 18px;}
+.carousel-css input {display:none;}
+.carousel-css .slides {display:flex; justify-content:center; align-items:center; gap: var(--gap); padding: 18px 12px; overflow: visible; user-select: none;}
+.carousel-css .slide {display:block; width: var(--small-w); transition: transform .45s ease, width .45s ease, opacity .45s ease; transform-origin: center; cursor: pointer; opacity: .55; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,.45); overflow: hidden; background:#111;}
+.carousel-css .slide img {display:block; width:100%; height:auto; vertical-align:middle;}
+#r1:checked ~ .slides label[for="r1"],
+#r2:checked ~ .slides label[for="r2"],
+#r3:checked ~ .slides label[for="r3"],
+#r4:checked ~ .slides label[for="r4"],
+#r5:checked ~ .slides label[for="r5"] {
+  width: var(--mid-w);
+  transform: scale(1.06);
+  opacity: 1;
+  z-index: 3;
+}
+#r1:checked ~ .slides label[for="r2"],
+#r2:checked ~ .slides label[for="r3"],
+#r3:checked ~ .slides label[for="r4"],
+#r4:checked ~ .slides label[for="r5"] {
+  transform: translateX(-6px) scale(.95);
+  opacity:.7;
+  z-index:2;
+}
+#r2:checked ~ .slides label[for="r1"],
+#r3:checked ~ .slides label[for="r2"],
+#r4:checked ~ .slides label[for="r3"],
+#r5:checked ~ .slides label[for="r4"] {
+  transform: translateX(6px) scale(.95);
+  opacity:.7;
+  z-index:2;
+}
+.carousel-css .action {margin-top:18px;}
+.carousel-css .action a {display:inline-block; padding:.6rem 1.25rem; letter-spacing:.12em; font-weight:600;}
+@media (max-width: 768px) {
+  .carousel-css { --small-w: 90px; --mid-w: 150px; --gap: 10px;}
+  .carousel-css .slides {padding: 12px 6px;}
+  .carousel-css .action a {font-size: .9rem; padding:.5rem .9rem;}
+}
+
+.big-box {
+  background: white;
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  margin-top: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-publicacion {
+  width: 110%;
+  height: 110%;
+  object-fit: contain;   /* 🔸 evita que se recorte la imagen */
+  object-position: center;
+  border-radius: 8px;
+  display: block;
+}
+
 
 
 
