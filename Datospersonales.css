@@ -36,15 +36,18 @@
     #restaurarcotraseña {
         font-family: 'Public Sans', sans-serif;
     }
+
+    #numerales{
+        height: 50px !important;
+    }
 }
 
 @media (max-width: 768px) {
 
     body {
-        background-size: contain;
+        background-size: cover;
         background-color: #ffffff;
-        background-image: url("assets/endless-constellation.svg");
-        background-repeat: repeat;
+        background-image: url("assets/Fondo-circular-silueta.svg");
         background-position: center;
     }
 
