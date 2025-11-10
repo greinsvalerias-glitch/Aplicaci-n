@@ -30,7 +30,7 @@
     <div class="container rounded-4 shadow-lg p-4 " style=" background-color: #f8f9fa; width: 60%;">
       <h2 class="my-5">Datos Personales</h2>
       <div class="container">
-        <div class=" row justify-content-center">
+        <div class=" row flex-start">
 
           <div class="col-md-4 col-sm-4 mx-5  ">
             <div class="col-12 d-flex mb-4">
@@ -84,9 +84,13 @@
               <div class="text-center">
                 <p class="m-2 fw-medium">Fecha de Nacimiento</p>
                 <div class="input-group">
-                  <input type="text" aria-label="Dia" placeholder="Día" class="form-control rounded-pill">
-                  <input type="text" aria-label="Mes" placeholder="Mes" class="form-control rounded-pill">
-                  <input type="text" aria-label="Año" placeholder="Año" class="form-control rounded-pill">
+                  <div class="input-group">
+                    <form>
+                      <input class="form-select rounded-pill" type="date" id="event-date" name="event-date">
+                      
+                    </form>
+                  </div>
+
                 </div>
               </div>
             </div>
