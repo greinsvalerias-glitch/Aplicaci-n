@@ -224,9 +224,9 @@ main p {
 
 .carousel-css {
   position: relative;
-  --small-w: 140px;
-  --mid-w: 260px;
-  --gap: 18px;
+  --small-w: 300px;
+  --mid-w: 600px;
+  --gap: 35px;
 }
 
 .carousel-css input {
@@ -345,4 +345,28 @@ main p {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+}
+.right-card { 
+  display: flex; 
+  align-items: flex-start; /* alinea por la parte superior */ 
+  justify-content: flex-start; /* mantiene todo a la izquierda */
+ }.
+
+ .texto-perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.perfil-titulo {
+  font-size: 18px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+.perfil-detalle {
+  font-size: 18px;
+  color: #333;
+  font-family: "Public Sans", sans-serif;
+  text-align: left;
 }
