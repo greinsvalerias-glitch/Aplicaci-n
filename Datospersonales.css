@@ -26,14 +26,16 @@
         text-align: justify !important;
     }
 
-
+    #imput-group {
+        height: 30px ;
+    }
 
     #detalles {
         font-family: 'Public Sans', sans-serif;
         font-size: 10px;
     }
 
-    #numerales{
+    #numerales {
         height: 50px !important;
     }
 }
@@ -66,9 +68,10 @@
     #detalles {
         font-family: 'Public Sans', sans-serif;
         font-size: 8px;
+        height: 20px;
     }
 
-     #numerales{
-        height: 50px !important;
+    #numerales {
+        height: 30px !important;
     }
 }

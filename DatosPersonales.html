@@ -30,13 +30,22 @@
     <div class="container rounded-4 shadow-lg p-4 " style=" background-color: #f8f9fa; width: 60%;">
       <h2 class="my-5">Datos Personales</h2>
       <div class="container">
-        <div class=" row ">
+        <div class=" row justify-content-center">
 
-          <div class="col-md-4 col-sm-12 mx-5  ">
+          <div class="col-md-4 col-sm-4 mx-5  ">
             <div class="col-12 d-flex mb-4">
               <img src="assets/DatosPer-numeral_Mesa de trabajo 1-01.svg" id="numerales">
               <div class="text-center">
                 <p class="m-2 fw-medium">Nombres</p>
+                <div class="input-group">
+                  <input type="text" aria-label="..." class="form-control rounded-pill">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex mb-4">
+              <img src="assets/DatosPer-numeral_Mesa de trabajo 1-02.svg" id="numerales">
+              <div class="text-center">
+                <p class="m-2 fw-medium">Apellidos</p>
                 <div class="input-group">
                   <input type="text" aria-label="..." class="form-control rounded-pill">
                 </div>
@@ -51,32 +60,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 d-flex mb-4">
-              <img src="assets/DatosPer-numeral_Mesa de trabajo 1-05.svg" id="numerales">
-              <div class="text-center">
-                <p class="m-2 fw-medium">Fecha de Nacimiento</p>
-                <div class="input-group">
-                  <input type="text" aria-label="..." class="form-control rounded-pill">
-                </div>
-              </div>
-            </div>
+
           </div>
           <div class="col-md-4 col-sm-12 mx-5  ">
-            <div class="col-12 d-flex mb-4">
-              <img src="assets/DatosPer-numeral_Mesa de trabajo 1-02.svg" id="numerales">
-              <div class="text-center">
-                <p class="m-2 fw-medium">Apellidos</p>
-                <div class="input-group">
-                  <input type="text" aria-label="..." class="form-control rounded-pill">
-                </div>
-              </div>
-            </div>
             <div class="col-12 d-flex mb-4">
               <img src="assets/DatosPer-numeral_Mesa de trabajo 1-04.svg" id="numerales">
               <div class="text-center">
                 <p class="m-2 fw-medium"># Identificación</p>
                 <div class="input-group">
-                  <select class="col-2 form-select rounded-pill btn-success" id="inputGroupSelect02">
+                  <select class="col-2 form-select rounded-pill btn-success" id="detalles">
                     <option selected>CC</option>
                     <option value="1">TI</option>
                     <option value="2">CE</option>
@@ -86,16 +78,43 @@
                 </div>
               </div>
             </div>
+
             <div class="col-12 d-flex mb-4">
-              <img src="assets/DatosPer-numeral_Mesa de trabajo 1-06.svg" id="numerales">
+              <img src="assets/DatosPer-numeral_Mesa de trabajo 1-05.svg" id="numerales">
               <div class="text-center">
                 <p class="m-2 fw-medium">Fecha de Nacimiento</p>
                 <div class="input-group">
-                  <select class="col-2 form-select rounded-pill btn-success" id="inputGroupSelect02">
-                    <option selected>CC</option>
-                    <option value="1">TI</option>
-                    <option value="2">CE</option>
-                    <option value="3">PPT</option>
+                  <input type="text" aria-label="Dia" placeholder="Día" class="form-control rounded-pill">
+                  <input type="text" aria-label="Mes" placeholder="Mes" class="form-control rounded-pill">
+                  <input type="text" aria-label="Año" placeholder="Año" class="form-control rounded-pill">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-12 d-flex mb-4">
+              <img src="assets/DatosPer-numeral_Mesa de trabajo 1-06.svg" id="numerales">
+              <div class="text-center">
+                <p class="m-2 fw-medium">Celular</p>
+                <div class="input-group ">
+                  <select class=" form-select rounded-pill btn-success" id="detalles">
+                    <option selected>+591</option>
+                    <option selected>+58</option>
+                    <option value="1">+56</option>
+                    <option selected>+55</option>
+                    <option selected>+54</option>
+                    <option value="1">+53</option>
+                    <option selected>+52</option>
+                    <option value="1">+51</option>
+                    <option selected>+57</option>
+                    <option value="1">+593</option>
+                    <option value="1">+595</option>
+                    <option value="1">+592</option>
+                    <option value="1">+598</option>
+                    <option value="1">+504</option>
+                    <option value="1">+505</option>
+                    <option value="1">+506</option>
+                    <option value="1">+507</option>
                   </select>
                   <input type="text" aria-label="..." class="form-control rounded-pill">
                 </div>
@@ -105,34 +124,11 @@
         </div>
 
       </div>
+      <a class="my-5 btn btn-success rounded-pill" href="inicio-usuario.html">Explorar</a>
     </div>
   </div>
   </div>
-  <!--
-<div class="container">
-        <div class=" row ">
-          <div class=" d-flex col-sm-12 mx-5">
-            <img src="assets/DatosPer-numeral_Mesa de trabajo 1-01.svg" class="row" id="numerales">
-            <div class=" m-3 text-center">
-              <p class="m-2 fw-medium">Nombres</p>
-              <div class="input-group">
-                <input type="text" aria-label="..." class="form-control rounded-pill">
-              </div>
-            </div>
-          </div>
-           <div class=" d-flex col-sm-12 mx-5">
-            <img src="assets/DatosPer-numeral_Mesa de trabajo 1-02.svg" class="row" id="numerales">
-            <div class=" m-3 text-center">
-              <p class="m-2 fw-medium">Nombres</p>
-              <div class="input-group">
-                <input type="text" aria-label="..." class="form-control rounded-pill">
-              </div>
-            </div>
-          </div>
 
-        </div>
-      </div>
-      -->
 </body>
 
 
