@@ -18,6 +18,13 @@
         font-size: 300%;
     }
 
+     h3 {
+        text-align: center;
+        color: rgb(27, 0, 46);
+        font-family: 'Yeseva One', serif;
+        font-size: 35px;
+    }
+
     p {
         text-align: center;
         color: rgb(27, 0, 46);
