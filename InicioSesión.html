@@ -24,41 +24,27 @@
 </head>
 
 <body class="container align-content-center">
-  <!--contenedor de imagen de perfil del usuario-->
-
-  <!-- Segunda opción de diseño -->
+ 
   <div class="IniciarSesión text-center align-items-center ">
     <div class="container rounded-4 shadow-lg d-flex flex-column justify-content-center align-items-center"
-      style=" background-color: #f8f9fa; width: 60%;;">
+      style=" background-color: #f8f9fa; width: 60%;">
       <h2 class="m-5">¡Hola de nuevo!</h2>
       <div class="row justify-content-center align-content-center">
-        <div class="col-md-5 col-sm-12 mx-5">
-          <div class="card border border-0 my-5" style="width: 18rem; background-color: #f8f9fa;">
-            <img src="assets/login-icon.svg" class="card-img-top img-fluid">
+        <div class="col-md-6 col-sm-12 justify-content-center align-content-center">
+          <div class="card border border-0 "  style="width: 100%; background-color: #f8f9fa;">
+            <img src="assets/login-icon.svg" class="card-img-top img-fluid " id="fotoperfil">
             <div class="card-body">
               <div id="detalles">
-                <div class="text-center fs-6">¿Esta no es tu cuenta?</div>
+                <div class="text-center ">¿Esta no es tu cuenta?</div>
                 <div class="text-center"><a href="Soportetecnico.html"> Soporte Técnico</a></div>
               </div>
-              <!--este apartado es de ingresar la foto de perfil
-              <div class="input-group flex-nowrap">
-                <div class="input-group ">
-                  <label class="input-group-text btn-success" id="restaurarcotraseña">Selecciona tu foto de
-                    perfil</label>
-                  <input type="file" class="form-control" id="inputGroupFile01">
-                </div>
-                <button class="btn btn-outline-secondary" type="button" id="button-addon1">
-                  <img src="assets/gallery-icon.svg">
-                </button>
-              </div>
-              -->
 
             </div>
           </div>
         </div>
         <div class="col-md-5 col-sm-12">
           <div class="container">
-            <div class=" justify-content-center align-content-center text-center m-2">
+            <div class=" justify-content-center align-content-center text-center p-2">
               <p class="m-2 fw-medium">Nombre de Usuario</p>
               <input type="text" style="border-radius:20px; " class="form-control shadow-sm"
                 placeholder="Introduce texto">
@@ -123,16 +109,16 @@
                 <div class="form-check form-switch justify-content-center d-flex align-items-center mb-3">
                   <input class="form-check-input me-2" type="checkbox" style="background-color: #048a21;"
                     id="empresaSwitch">
-                  <label class="form-check-label small" for="empresaSwitch">Soy empresa</label>
+                  <label class="form-check-label small" for="empresaSwitch" id="detalles">Soy empresa</label>
                 </div>
               </div>
 
-              <div class=" justify-content-between align-content-center align-items-center m-3">
-                <div class="btn btn-success rounded-pill m-2 fs-4 fw-semibold"> Iniciar Sesión </div>
+              <div class=" justify-content-between align-content-center align-items-center">
+                <div class="btn btn-success rounded-pill m-2 fs-4 fw-semibold" id="boton-iniciar"> Iniciar Sesión </div>
 
-                <div class="d-flex align-items-center justify-content-center m-2">
+                <div class="d-flex align-items-center justify-content-center ">
                   <hr class="flex-grow-1 mx-2">
-                  <div class="text-center text-secondary" id="opcionesdeinicio"> Iniciar sesión con</div>
+                  <div class="text-center text-secondary" id="detalles"> Iniciar sesión con</div>
                   <hr class="flex-grow-1 mx-2">
                 </div>
 
