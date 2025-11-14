@@ -1,7 +1,7 @@
 body {
   background-color: #fff;
+  font-family: "Public Sans", sans-serif; /* texto general */
 }
-
 
 .contenido {
   padding-top: 48px;
@@ -19,7 +19,6 @@ body {
 .rosca:hover {
   transform: scale(1.05); 
 }
-
 
 .tarjeta {
   background-color: #f8f9fa;
@@ -41,6 +40,7 @@ body {
 .mi-header .buscador {
   width: 250px; 
   margin-left: 1050px;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .mi-header img {
@@ -51,4 +51,19 @@ body {
   margin-left: 500px; 
   display: flex;
   gap: 13px;
+}
+
+/* Botones "Empezar" */
+.btn-empezar {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Textos arriba de los botones */
+.titulo-tarjeta {
+  font-family: "Public Sans", sans-serif !important;
+}
+
+/* Mensaje "Está algo vacío por aquí..." */
+.mensaje-vacio {
+  font-family: "Public Sans", sans-serif !important;
 }

@@ -1,0 +1,35 @@
+body {
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.titulo {
+    font-weight: 600;
+    color: #444;
+}
+
+.cuadro {
+    max-width: 600px;
+    background: #e8e8e8;
+    border-radius: 25px;
+}
+
+.numero {
+    background: #bfbfbf;
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.pregunta {
+    border-bottom: 2px solid #333;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.sombra {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
