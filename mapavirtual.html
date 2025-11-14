@@ -92,7 +92,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
         // Inicializa el mapa centrado (lat, lon) y con zoom
-        const map = L.map('map').setView([6.1726, -75.6096], 15.3);
+        const map = L.map('map').setView([6.1726, -75.6096], 18);
 
         // Capa de teselas (OpenStreetMap)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -110,7 +110,7 @@
             .on('click', () => {
                 abrirOffcanvas(
                     'Pablo Parrilla',
-                    '<img src="assets/Pablo-parrilla-icon.jpeg"  width="300px" class=" align-content-center rounded-circle"> <br> <br> <p>Restaurante con platos a la parrilla, muy tradicional del sector.<p>'
+                    '<img src="assets/Pablo-parrilla-icon.jpeg"  width="300px" class=" align-content-center rounded-circle"> <br> <br> <p id="detalles">Restaurante con platos a la parrilla, muy tradicional del sector. Reconocido por sus exquisitos cócteles y asados, desde 2016 se encuentran ubicados muy cerca del Parque de Itagüí con la premisa de innovar en la gastronomía tradicional.<p> <div class= <div class=" container row rounded-pill btn" style=" background-color: #f8f9fa;"> <div class="btn btn-success rounded-pill"><img src="assets/check-icon.svg"></div> <div class="btn btn-danger rounded-pill"><img src="assets/close-icon.svg"></div></div> <div class="row justify-content-center align-content-center"> <div class="col-md-6 col-sm-12 justify-content-center align-content-center"> <div class="card border border-0 "  style="width: 100%; background-color: #f8f9fa;"> <img src="assets/login-icon.svg" class="card-img-top img-fluid " id="fotoperfil"> <div class="card-body"> <div id="detalles"> <div class="text-center ">¿Esta no es tu cuenta?</div> <div class="text-center"><a href="Soportetecnico.html"> Soporte Técnico</a></div> </div> </div> </div> </div> <div class="col-md-5 col-sm-12"> <div class="container"> <div class=" justify-content-center align-content-center text-center p-2"> <p class="m-2 fw-medium">Nombre de Usuario</p> <input type="text" style="border-radius:20px; " class="form-control shadow-sm" placeholder="Introduce texto"></div></div>'
                 );
             });
 
