@@ -1,0 +1,69 @@
+body {
+  background-color: #fff;
+  font-family: "Public Sans", sans-serif; /* texto general */
+}
+
+.contenido {
+  padding-top: 48px;
+  padding-bottom: 80px;
+  margin-top: 150px;
+}
+
+.rosca {
+  width: 300px;    
+  height: 300px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.rosca:hover {
+  transform: scale(1.05); 
+}
+
+.tarjeta {
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  min-width: 320px;
+  max-width: 420px;
+}
+
+.mi-header {
+  background-color: rgb(255, 240, 173); 
+  height: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mi-header .buscador {
+  width: 250px; 
+  margin-left: 1050px;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.mi-header img {
+  cursor: pointer;
+}
+
+.iconos {
+  margin-left: 500px; 
+  display: flex;
+  gap: 13px;
+}
+
+/* Botones "Empezar" */
+.btn-empezar {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* Textos arriba de los botones */
+.titulo-tarjeta {
+  font-family: "Public Sans", sans-serif !important;
+}
+
+/* Mensaje "Está algo vacío por aquí..." */
+.mensaje-vacio {
+  font-family: "Public Sans", sans-serif !important;
+}
