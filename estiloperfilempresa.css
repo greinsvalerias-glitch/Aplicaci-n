@@ -28,14 +28,17 @@
         color: rgb(27, 0, 46);
         font-family: 'Poppins', sans-serif;
         font-size: 19px;
-        font-weight: 700;
+        font-weight: 200;
     }
 
     #fotoperfil {
         align-items: center !important;
     }
 
-
+#card-title {
+        font-family: 'Yeseva one', serif;
+        font-size: 19px;
+    }
 
     #detalles {
         font-family: 'Public Sans', sans-serif;
