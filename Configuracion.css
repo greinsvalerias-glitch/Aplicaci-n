@@ -1,0 +1,142 @@
+body {
+    background: #ffffff;
+    font-family: "Poppins", "public sans", sans-serif;
+}
+
+.barra-superior {
+    background-color: rgb(255, 240, 173);
+    height: 55px;
+}
+
+.iconos-izq i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icono-header {
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+.iconos-izq a {
+    display: flex;
+    align-items: center;
+}
+
+.iconos-izq {
+    margin-left: 400px;
+}
+
+.buscador-container {
+    position: relative;
+}
+
+.buscador {
+    padding: 6px 30px 6px 12px;
+    border-radius: 25px;
+    border: 1px solid #cfcfcf;;
+    background: #ffffff;
+    width: 260px;
+    margin-right: 300px;
+}
+
+
+.title-bar {
+    width: 100%;
+    background: #fffce2;      
+    padding: 18px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #555;
+    border-radius: 0 0 25px 25px;  
+}
+
+
+.contenedor-principal {
+    background: white;
+    width: 85%;
+    padding: 40px 20px;
+    border-radius: 15px;
+}
+
+
+.foto-perfil {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.img-perfil {
+    width: 100%;
+    opacity: 0.7;
+}
+
+.icono-subir {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px 7px;
+    border: 1px solid #ccc;
+}
+
+.etiqueta {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.input-gris {
+    background: #ffffff;
+    border: 1px solid #cfcfcf;
+    border-radius: 25px;
+    padding: 8px 12px;
+}
+
+.opciones-id label {
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.caja-edad {
+    background: #ffffff;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid #cfcfcf;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.footer-bar {
+    background: #e7ffd0;
+    height: 220px;
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.usuario-grande {
+    position: relative;
+}
+
+.usuario-grande img {
+    width: 80px;
+    opacity: 0.8;
+}
+
+.estado-online {
+    width: 15px;
+    height: 15px;
+    background: #00c600;
+    border-radius: 50%;
+    position: absolute;
+    right: 6px;
+    bottom: 4px;
+}
+

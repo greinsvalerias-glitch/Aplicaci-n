@@ -53,17 +53,14 @@ body {
   gap: 13px;
 }
 
-/* Botones "Empezar" */
 .btn-empezar {
   font-family: "Poppins", sans-serif !important;
 }
 
-/* Textos arriba de los botones */
 .titulo-tarjeta {
   font-family: "Public Sans", sans-serif !important;
 }
 
-/* Mensaje "Está algo vacío por aquí..." */
 .mensaje-vacio {
   font-family: "Public Sans", sans-serif !important;
 }
