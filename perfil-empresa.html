@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Pablo Parrilla</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Public+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Public+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style-usuario.css">
+  <link rel="stylesheet" href="estiloperfilempresa.css" />
   <link rel="icon" href="isotipo.png">
 </head>
+
 <body class="bg-white">
 
   <header class="mi-header d-flex align-items-center">
@@ -22,22 +26,36 @@
       <input class="form-control form-control-sm rounded-pill buscador" placeholder="Buscador">
     </form>
   </header>
-  <main class="container d-flex flex-column align-items-center justify-content-start contenido">
-    <img src="Rosca.png" alt="vacío" class="rosca mb-3">
-    <p class="text-muted fs-5 fst-italic mb-4 mensaje-vacio">Está algo vacío por aquí...</p>
-    <div class="d-flex gap-4 justify-content-center flex-wrap">
-      <div class="tarjeta text-center">
-        <p class="mb-3 fw-semibold titulo-tarjeta">Encuesta de oferta para empresas</p>
-        <a href="encuesta-empresa.html" class="btn btn-warning btn-lg btn-empezar">Empezar</a>
+  <div class="container rounded-3 p-2 text-center" style="margin-top: 80px;">
+    <div class="row align-content-center justify-content-center">
+      <div class="col-md-3 col-sm-7 justify-content-center align-content-center">
+        <img src="assets/Pablo-parrilla-icon.jpeg" class=" img-fluid rounded-circle " style="width: 400px;">
       </div>
+      <div class="col-md-4 col-sm-6 align-content-center">
+        <p class="m-2 fw-medium "><span id="nombresempresa">Pablo Parrilla</span></p><span id="detalles">
+          <p class="fw-semibold text-start" id="detalles"> Restaurante tradicional especializado en parrilladas, asados
+            y platos gourmet. Ofrecemos una experiencia culinaria auténtica con ingredientes frescos y recetas
+            esencialmente variadas.<br>
+            Nos encontramos ubicados muy cerca del parque de Itagüí.<br>¡Te esperamos!<br><br>
+            <img src="assets/location-icon.svg" style="height: 20px">Cra. 52 #51A - 39, Itagüi</p>
+          <div class="row justify-content-center align-content-center gap-4">
 
-      <div class="tarjeta text-center">
-        <p class="mb-3 fw-semibold titulo-tarjeta">Encuesta de contenido para usuarios</p>
-        <a href="#" class="btn btn-warning btn-lg btn-empezar">Empezar</a>
+
+            <button class="btn btn-success rounded-circle d-flex justify-content-center align-items-center"
+              style="width:45px;height:45px;"><img src="assets/add-icon2.svg" style="width:20px;"></button>
+
+            <button class="btn btn-success rounded-circle d-flex justify-content-center align-items-center"
+              style="width:45px;height:45px;" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"><img
+                src="assets/delete-icon.svg" style="width:20px;"></button>
+          </div>
+        </span></p>
+
       </div>
     </div>
-  </main>
+
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
