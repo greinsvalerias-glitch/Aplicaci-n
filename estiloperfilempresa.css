@@ -45,6 +45,11 @@
         font-size: 12px;
     }
 
+    #botonexperiencia {
+        font-family: 'Public Sans', sans-serif;
+        font-size: 16px;
+    }
+
     #nombresempresa {
         font-family: 'Yeseva one', serif;
         font-size: 22px;
@@ -144,6 +149,11 @@
         font-size: 9px;
     }
 
+    #botonexperiencia {
+        font-family: 'Public Sans', sans-serif;
+        font-size: 12px;
+    }
+
     #nombresempresa {
         font-family: 'Yeseva one', serif;
         font-size: 15px;
@@ -196,6 +206,7 @@
         display: flex;
         gap: 13px;
     }
+
     th {
         text-align: inherit;
         text-align: -webkit-match-parent;
