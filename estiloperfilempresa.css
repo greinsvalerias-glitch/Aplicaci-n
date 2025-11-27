@@ -144,6 +144,11 @@
         font-size: 15px;
     }
 
+    #card-title {
+        font-family: 'Yeseva one', serif;
+        font-size: 15px;
+    }
+
     #boton-iniciar {
         font-size: 13px !important;
     }
