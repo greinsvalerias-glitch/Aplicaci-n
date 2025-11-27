@@ -8,16 +8,12 @@ body {
     height: 55px;
 }
 
-.iconos-izq i {
-    font-size: 20px;
-    cursor: pointer;
-}
-
 .icono-header {
     width: 23px;
     height: 23px;
     cursor: pointer;
 }
+
 .iconos-izq a {
     display: flex;
     align-items: center;
@@ -34,37 +30,49 @@ body {
 .buscador {
     padding: 6px 30px 6px 12px;
     border-radius: 25px;
-    border: 1px solid #cfcfcf;;
+    border: 1px solid #cfcfcf;
     background: #ffffff;
     width: 260px;
     margin-right: 300px;
 }
 
-
 .title-bar {
     width: 100%;
-    background: #fffce2;      
+    background: #fffce2;
     padding: 18px 0;
     text-align: center;
     font-weight: 700;
     font-size: 1.6rem;
     color: #555;
-    border-radius: 0 0 25px 25px;  
+    border-radius: 0 0 25px 25px;
 }
-
 
 .contenedor-principal {
     background: white;
     width: 85%;
     padding: 40px 20px;
     border-radius: 15px;
+    margin-top: 150px;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 50px !important;         
+}
+
+.col-md-4, .col-md-2 {
+    width: auto !important;    
+    padding: 0 !important;       
+    margin: 0 !important;
+    text-align: center;
+}
 
 .foto-perfil {
     position: relative;
     width: 120px;
     height: 120px;
+    margin: 0 auto;
 }
 
 .img-perfil {
@@ -85,6 +93,8 @@ body {
 .etiqueta {
     font-size: 14px;
     margin-bottom: 3px;
+    display: block;
+    text-align: center;
 }
 
 .input-gris {
@@ -92,6 +102,13 @@ body {
     border: 1px solid #cfcfcf;
     border-radius: 25px;
     padding: 8px 12px;
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+.opciones-id {
+    text-align: center;
 }
 
 .opciones-id label {
@@ -101,22 +118,22 @@ body {
 
 .caja-edad {
     background: #ffffff;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 10px;
     border: 1px solid #cfcfcf;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8px;
+    margin: 8px auto 0 auto;
 }
 
 .footer-bar {
     background: #e7ffd0;
     height: 220px;
-    margin-top: 40px;
+    margin-top: 385px;
     width: 100%;
     border-radius: 25px 25px 0 0;
 }
@@ -126,17 +143,75 @@ body {
 }
 
 .usuario-grande img {
-    width: 80px;
+    width: 150px;
     opacity: 0.8;
+    margin-right: 20px;
 }
 
 .estado-online {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     background: #00c600;
     border-radius: 50%;
     position: absolute;
-    right: 6px;
+    right: 35px;
     bottom: 4px;
 }
+
+.btn-guardar {
+    background: #fff5b3;
+    border: 1px solid #fff3b0;
+    color: #444;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 250px;
+    display: block;
+    margin: 25px auto 0 auto;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-guardar:hover {
+    background: #fff5a8;
+}
+
+.texto-footer {
+    margin-right: 110px;
+}
+
+.recuadro-foto {
+    background: #f4ffe9;               
+    padding: 30px 40px 20px 60px;     
+    border-radius: 30px;           
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07)
+}
+
+.subtitulo-usuario {
+    margin-left: 0px;        
+    font-size: 18px;
+    font-weight: 600;
+    color: #4b4b4b;
+    font-family: poppins, sans-serif;
+
+}
+
+.btn-editar-footer {
+    background: #c6ff9e;
+    border: 1px solid #b7ff8a;
+    color: #444;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s ease;
+    font-size: 14px;
+}
+
+.btn-editar-footer:hover {
+    background: #b5ff87;
+}
+
+
 
