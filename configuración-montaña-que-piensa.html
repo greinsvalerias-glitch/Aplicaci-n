@@ -15,27 +15,19 @@
 
 <body class="bg-white">
 
-    <header class="mi-header d-flex align-items-center">
-        <div class="iconos">
-            <a href="mapavirtual.html">
-                <img src="assets/login-icon.svg" alt="perfil" width="35">
-            </a>
-
-            <a href="configuración-montaña-que-piensa.html">
-                <img src="assets/settings.svg" alt="ajustes" width="35">
-            </a>
-
-            <a href="mapavirtual.html">
-                <img src="assets/location.svg" alt="ubicacion" width="35">
-            </a>
-            <a href="colecciones.html">
-                <img src="assets/folder.svg" alt="carpeta" width="35">
-            </a>
+    <header class="barra-superior d-flex align-items-center justify-content-between px-4">
+        <div class="d-flex align-items-center gap-3 iconos-izq">
+            <a href="publicaciones.html"><img src="assets/login-icon.svg" class="icono-header"></a>
+            <a href="Configuración.html"><img src="assets/settings.svg" class="icono-header"></a>
+            <a href="mapavirtual.html"><img src="assets/location.svg" class="icono-header"></a>
+            <a href="colecciones.html"><img src="assets/folder.svg" class="icono-header"></a>
         </div>
-        <form class="d-flex">
-            <input class="form-control form-control-sm rounded-pill buscador" placeholder="Buscador">
-        </form>
+
+        <div class="buscador-container">
+            <input type="text" placeholder="Buscar Locales..." class="buscador">
+        </div>
     </header>
+
     <div class="container rounded-3 p-2 text-center" style="margin-top: 80px; background-color: antiquewhite;">
         <div class="row align-content-center justify-content-center">
             <div class="col-md-3 col-sm-7 justify-content-center align-content-center">
@@ -149,13 +141,13 @@
 
                     </div>
                 </div>
-                 <button class="btn btn-success m-3 rounded-pill" id="botonexperiencia"> <img
+                <button class="btn btn-success m-3 rounded-pill" id="botonexperiencia"> <img
                         src="assets/gallery-icon-white.svg" style="height: 20px"> Editar Menú
                     <img src="assets/gallery-icon-white.svg" style="height: 20px"></button>
             </div>
 
-           
-        <div class="d-flex align-items-center justify-content-center m-3 ">
+
+            <div class="d-flex align-items-center justify-content-center m-3 ">
                 <hr class="flex-grow-1 mx-2">
                 <div class="text-center text-secondary" id="card-title">Publicaciones</div>
                 <hr class="flex-grow-1 mx-2">
@@ -171,7 +163,7 @@
         </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

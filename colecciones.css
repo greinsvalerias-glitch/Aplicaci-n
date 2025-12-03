@@ -18,7 +18,7 @@
         font-size: 22px;
     }
 
-     h3 {
+    h3 {
         text-align: center;
         color: rgb(27, 0, 46);
         font-family: 'Yeseva One', serif;
@@ -80,27 +80,49 @@
         max-width: 420px;
     }
 
-    .mi-header {
+    .barra-superior {
         background-color: rgb(255, 240, 173);
-        height: 80px;
-        padding-left: 40px;
-        padding-right: 40px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        height: 55px;
     }
 
-    .mi-header .buscador {
-        width: 250px;
-        margin-left: 1050px;
-    }
-
-    .mi-header img {
+    .icono-header {
+        width: 23px;
+        height: 23px;
         cursor: pointer;
     }
 
-    .iconos {
-        margin-left: 500px;
+    .iconos-izq a {
         display: flex;
-        gap: 13px;
+        align-items: center;
+    }
+
+    .iconos-izq {
+        margin-left: 400px;
+    }
+
+    .buscador-container {
+        position: relative;
+    }
+
+    .buscador {
+        padding: 6px 30px 6px 12px;
+        border-radius: 25px;
+        border: 1px solid #cfcfcf;
+        background: #ffffff;
+        width: 260px;
+        margin-right: 300px;
+    }
+
+    .title-bar {
+        width: 100%;
+        background: #fffce2;
+        padding: 18px 0;
+        text-align: center;
+        font-family: Poppins, sans-serif;
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: #555;
+        border-radius: 0 0 25px 25px;
     }
 }
 
@@ -150,31 +172,53 @@
 
 
     .contenido {
-        padding:60px;
+        padding: 60px;
     }
 
-    
 
-    .mi-header {
+
+    .barra-superior {
         background-color: rgb(255, 240, 173);
-        height: 80px;
-        padding-left: 40px;
-        padding-right: 40px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        height: 55px;
     }
 
-    .mi-header .buscador {
-        width: 250px;
-        margin-left: 1050px;
-    }
-
-    .mi-header img {
+    .icono-header {
+        width: 23px;
+        height: 23px;
         cursor: pointer;
     }
 
-    .iconos {
-        margin-left: 500px;
+    .iconos-izq a {
         display: flex;
-        gap: 13px;
+        align-items: center;
+    }
+
+    .iconos-izq {
+        margin-left: 400px;
+    }
+
+    .buscador-container {
+        position: relative;
+    }
+
+    .buscador {
+        padding: 6px 30px 6px 12px;
+        border-radius: 25px;
+        border: 1px solid #cfcfcf;
+        background: #ffffff;
+        width: 260px;
+        margin-right: 300px;
+    }
+
+    .title-bar {
+        width: 100%;
+        background: #fffce2;
+        padding: 18px 0;
+        text-align: center;
+        font-size: 1 rem;
+        font-family: Poppins, sans-serif;
+        font-weight: 600;
+        color: #555;
+        border-radius: 0 0 25px 25px;
     }
 }
