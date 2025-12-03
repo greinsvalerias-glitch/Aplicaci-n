@@ -11,33 +11,40 @@ body{
         height: 55px;
     }
 
-    .icono-header {
-        width: 23px;
-        height: 23px;
-        cursor: pointer;
-    }
+    .barra-superior {
+    background-color: rgb(255, 240, 173);
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    .iconos-izq a {
-        display: flex;
-        align-items: center;
-    }
+.iconos-izq {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 600px; 
+}
 
-    .iconos-izq {
-        margin-left: 400px;
-    }
+.buscador-container {
+    margin-right: 20px;
+}
 
-    .buscador-container {
-        position: relative;
-    }
+.buscador {
+    padding: 6px 30px 6px 12px;
+    border-radius: 25px;
+    border: 1px solid #cfcfcf;
+    background: #ffffff;
+    width: 240px;
+    margin-right: 600px;
+}
 
-    .buscador {
-        padding: 6px 30px 6px 12px;
-        border-radius: 25px;
-        border: 1px solid #cfcfcf;
-        background: #ffffff;
-        width: 260px;
-        margin-right: 300px;
-    }
+.icono-header {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
 
 .layout{
   display:flex;
