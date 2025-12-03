@@ -80,44 +80,44 @@
         max-width: 420px;
     }
 
-   .barra-superior {
+    .barra-superior {
         background-color: rgb(255, 240, 173);
         height: 55px;
     }
 
     .barra-superior {
-    background-color: rgb(255, 240, 173);
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+        background-color: rgb(255, 240, 173);
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.iconos-izq {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-left: 600px; 
-}
+    .iconos-izq {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-left: 600px;
+    }
 
-.buscador-container {
-    margin-right: 20px;
-}
+    .buscador-container {
+        margin-right: 20px;
+    }
 
-.buscador {
-    padding: 6px 30px 6px 12px;
-    border-radius: 25px;
-    border: 1px solid #cfcfcf;
-    background: #ffffff;
-    width: 240px;
-    margin-right: 600px;
-}
+    .buscador {
+        padding: 6px 30px 6px 12px;
+        border-radius: 25px;
+        border: 1px solid #cfcfcf;
+        background: #ffffff;
+        width: 240px;
+        margin-right: 600px;
+    }
 
-.icono-header {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-}
+    .icono-header {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+    }
 
     .title-bar {
         width: 100%;
@@ -189,38 +189,39 @@
     }
 
     .barra-superior {
-    background-color: rgb(255, 240, 173);
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+        background-color: rgb(255, 240, 173);
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.iconos-izq {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-left: 600px; 
-}
+    .iconos-izq {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-left: 100px;
+    }
 
-.buscador-container {
-    margin-right: 20px;
-}
+    .buscador-container {
+        margin-right: 20px;
+    }
 
-.buscador {
-    padding: 6px 30px 6px 12px;
-    border-radius: 25px;
-    border: 1px solid #cfcfcf;
-    background: #ffffff;
-    width: 240px;
-    margin-right: 600px;
-}
+    .buscador {
+        padding: 6px 30px 6px 12px;
+        border-radius: 25px;
+        border: 1px solid #cfcfcf;
+        background: #ffffff;
+        width: 240px;
+        margin: 40px;
+        margin-right: 50px;
+    }
 
-.icono-header {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-}
+    .icono-header {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+    }
 
     .title-bar {
         width: 100%;
