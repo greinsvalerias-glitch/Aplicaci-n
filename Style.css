@@ -32,14 +32,27 @@ header h1 {
   border-radius: 25px;
 }
 
+header {
+  width: 100%;
+}
+
+.mi-header {
+  background-color: rgb(255, 240, 173);
+  width: 100%;
+}
+
 .mi-logo {
-  margin-left: 550px;
   width: 40px;
+  margin-left: 600px;
 }
 
 .botones-header {
-  margin-left: 950px;
+  margin-left: 800px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
 
 main {
   margin-top: 50px;
@@ -306,6 +319,170 @@ main p {
   height: 100%;
   object-fit: cover;
 }
+/* Contenedor centrado */
+.categorias-mini {
+  padding: 10px 0;
+}
+
+/* Las tarjeticas */
+.cat-mini {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.cat-mini:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Cuando se selecciona */
+.btn-check:checked + .cat-mini {
+  background: #ffd74a;
+  border-color: #f5c500;
+  box-shadow: 0 3px 10px rgba(255, 215, 0, 0.4);
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Degradado negro desde abajo */
+.slide::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  pointer-events: none;
+}
+
+/* Título encima del degradado */
+.slide-title {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 5;
+  text-shadow: 0px 3px 10px rgba(0,0,0,0.6);
+}
+
+/* Para oscurecer suavemente la imagen */
+.slide {
+  position: relative;
+  transition: .3s ease;
+}
+
+.slide.activo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+}
+
+/* Caja con la descripción */
+.descripcion-lugar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 80%;
+  background: rgba(255,255,255,0.92);
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  opacity: 0;
+  pointer-events: none;
+  transition: .35s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+}
+
+/* Cuando está activa */
+.descripcion-lugar.activa {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* Animación para subir título */
+.slide-title {
+  transition: .35s ease;
+}
+
+.slide-title.subido {
+  transform: translateY(-40px);
+}
+.slide.activo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+}
+.descripcion-lugar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 80%;
+  background: rgba(255,255,255,0.92);
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  opacity: 0;
+  pointer-events: none;
+  transition: .35s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+  z-index: 10;
+}
+
+.descripcion-lugar.activa {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+.slide-title {
+  transition: .35s ease;
+}
+
+.slide-title.subido {
+  transform: translateY(-40px);
+}
+
+
 }
 @media (max-width: 768px) {
 body {
@@ -614,5 +791,167 @@ main p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Contenedor centrado */
+.categorias-mini {
+  padding: 10px 0;
+}
+
+/* Las tarjeticas */
+.cat-mini {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.cat-mini:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Cuando se selecciona */
+.btn-check:checked + .cat-mini {
+  background: #ffd74a;
+  border-color: #f5c500;
+  box-shadow: 0 3px 10px rgba(255, 215, 0, 0.4);
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Degradado negro desde abajo */
+.slide::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  pointer-events: none;
+}
+
+/* Título encima del degradado */
+.slide-title {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  z-index: 5;
+  text-shadow: 0px 3px 10px rgba(0,0,0,0.6);
+}
+
+/* Para oscurecer suavemente la imagen */
+.slide {
+  position: relative;
+  transition: .3s ease;
+}
+
+.slide.activo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+}
+
+/* Caja con la descripción */
+.descripcion-lugar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 80%;
+  background: rgba(255,255,255,0.92);
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  opacity: 0;
+  pointer-events: none;
+  transition: .35s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+}
+
+/* Cuando está activa */
+.descripcion-lugar.activa {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* Animación para subir título */
+.slide-title {
+  transition: .35s ease;
+}
+
+.slide-title.subido {
+  transform: translateY(-40px);
+}
+.slide.activo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+}
+.descripcion-lugar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 80%;
+  background: rgba(255,255,255,0.92);
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  opacity: 0;
+  pointer-events: none;
+  transition: .35s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+  z-index: 10;
+}
+.descripcion-lugar.activa {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+.slide-title {
+  transition: .35s ease;
+}
+
+.slide-title.subido {
+  transform: translateY(-40px);
 }
 }
