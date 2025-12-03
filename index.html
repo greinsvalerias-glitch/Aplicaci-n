@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ita-go</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Public+Sans:ital@0;1&family=Yeseva+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Public+Sans:ital@0;1&family=Yeseva+One&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="carousel.css">
   <link rel="icon" href="isotipo.png">
 </head>
 
 <body>
-  <header class="mi-header d-flex justify-content-between align-items-center px-4 py-2 shadow-sm">
+  <header class="mi-header d-flex align-items-center px-4 py-2 shadow-sm">
     <a href="index.html">
-      <img src="Isotipo.png" alt="Logo de la página" class="mi-logo" style="cursor:pointer;">
+      <img src="Isotipo.png" alt="Logo de la página" class="mi-logo mx-4" style="cursor:pointer;">
     </a>
-    <div class="d-flex align-items-center gap-4 botones-header">
+    <div class="d-flex align-items-center gap-4 botones-header me-5">
       <a class="btn btn-outline-dark mi-boton" href="InicioSesión.html">Iniciar sesión</a>
       <a class="btn btn-outline-dark mi-boton" href="Registrarse.html">Registrarse</a>
       <form class="d-flex ms-3">
@@ -40,7 +43,8 @@
       <img src="panoramica.jpeg" alt="Imagen 2" class="circulo mediano ms-3">
       <img src="itagui-3.jpg" alt="Imagen 3" class="circulo pequeño ms-3">
     </div>
-<hr class="linea-decorativa">
+
+    <hr class="linea-decorativa">
 
     <div class="container-card d-flex justify-content-center mx-auto">
       <div class="left-card d-flex flex-column p-4">
@@ -64,33 +68,139 @@
 
       <div class="right-card p-4 d-flex flex-column justify-content-start">
         <div class="circle mb-3">
-  <img src="assets/login-icon.svg" alt="foto" class="img-circle">
-</div>
+          <a href="perfil-diego.html">
+            <img src="assets/login-icon.svg" alt="foto" class="img-circle">
+          </a>
+        </div>
 
-        <p class="perfil-titulo mb-2">Título o sección</p>
-        <p class="perfil-detalle">Descripción corta</p>
+        <p class="perfil-titulo mb-2">Diego Lopez</p>
+        <p class="perfil-detalle">Pablo Parrilla es un lugar que vale la pena visitar en Itagüí. Buena comida, ambiente
+          local y gente amable</p>
       </div>
     </div>
 
-    <section class="carousel-css mt-5">
-      <input type="radio" name="carr" id="r1">
+    <div class="categorias-mini d-flex justify-content-center gap-3 my-4">
+      <div>
+        <input type="radio" class="btn-check" name="cat" id="mini-naturaleza" checked>
+        <label class="cat-mini" for="mini-naturaleza">Naturaleza</label>
+      </div>
+
+      <div>
+        <input type="radio" class="btn-check" name="cat" id="mini-arte">
+        <label class="cat-mini" for="mini-arte">Arte</label>
+      </div>
+
+      <div>
+        <input type="radio" class="btn-check" name="cat" id="mini-gastro">
+        <label class="cat-mini" for="mini-gastro">Gastronomía</label>
+      </div>
+    </div>
+
+    <section class="carousel-css">
+
+      <input type="radio" name="carr" id="r1" checked>
       <input type="radio" name="carr" id="r2">
-      <input type="radio" name="carr" id="r3" checked>
+      <input type="radio" name="carr" id="r3">
       <input type="radio" name="carr" id="r4">
       <input type="radio" name="carr" id="r5">
 
-      <div class="slides">
-        <label for="r1" class="slide"><img src="Museo.jpeg" alt="imagen 1"></label>
-        <label for="r2" class="slide"><img src="PARQUE.jpg" alt="imagen 2"></label>
-        <label for="r3" class="slide"><img src="atractivo.jpg" alt="imagen 3"></label>
-        <label for="r4" class="slide"><img src="acuaparque.jpg" alt="imagen 4"></label>
-        <label for="r5" class="slide"><img src="Cancha.jpeg" alt="imagen 5"></label>
+      <div class="slides" id="carouselSlides">
+      </div>
+
+      <div class="overlay-info" id="overlayInfo">
+        <h3 id="overlayTitle"></h3>
+        <p id="overlayText"></p>
       </div>
 
       <div class="action text-center">
-        <a class="btn btn-warning btn-lg" href="#">VER MÁS</a>
+        <a class="btn btn-warning btn-lg" id="btnVerMas" href="#">VER MÁS</a>
       </div>
     </section>
+
+    <script>
+      const imagenes = {
+        naturaleza: [
+          { src: "humedal.jpg", nombre: "Humedal Ditaires" },
+          { src: "manzanillo.jpg", nombre: "El Manzanillo" },
+          { src: "montaña.jpg", nombre: "La Montaña Que Piensa" },
+          { src: "chinca.jpg", nombre: "La Chinca" },
+          { src: "acuaparque.jpg", nombre: "Acuaparque Ditaires" }
+        ],
+        arte: [
+          { src: "Museo.jpeg", nombre: "Museo de Itagüí" },
+          { src: "casa.png", nombre: "Casa de la Cultura" },
+          { src: "graciliano.jpg", nombre: "Parque Arqueológico Graciliano Arcila Vélez" },
+          { src: "teatro.jpeg", nombre: "Teatro Caribe" },
+          { src: "artista.jpg", nombre: "Parque Del Artista" }
+        ],
+        gastronomia: [
+          { src: "pablo.jpg", nombre: "Pablo Parrilla" },
+          { src: "fonda.jpg", nombre: "Fonda Bitagüí" },
+          { src: "billar.jpg", nombre: "PBA Café Billar" },
+          { src: "masfinca.jpg", nombre: "Steak House Más Finca" },
+          { src: "ambar.jpg", nombre: "Ámbar Violetazul" }
+        ]
+      };
+
+      const infoLugares = {
+        "Humedal Ditaires": "Un espacio natural perfecto para caminar, ver aves y desconectarte.",
+        "El Manzanillo": "Mirador tradicional con vista a todo Itagüí.",
+        "La Montaña Que Piensa": "Senderos verdes y vistas hermosas.",
+        "La Chinca": "Zona campestre con aire fresco.",
+        "Acuaparque Ditaires": "Piscinas y ambiente familiar.",
+        "Museo de Itagüí": "Exposiciones y cultura local.",
+        "Casa de la Cultura": "Talleres, arte y eventos.",
+        "Parque Arqueológico Graciliano Arcila Vélez": "Esculturas y tranquilidad.",
+        "Teatro Caribe": "Obras, música y presentaciones.",
+        "Galería Urban": "Arte urbano y moderno.",
+        "Pablo Parrilla": "Parrilla muy reconocida en Itagüí.",
+        "Fonda Bitagüí": "Comida típica paisa.",
+        "PBA Café Billar": "Billar y un ambiente tranquilo.",
+        "Steak House Más Finca": "Carne deliciosa.",
+        "Ámbar Violetazul": "Café moderno con postres."
+      };
+
+      function cambiarCarrusel(categoria) {
+        const slides = document.getElementById("carouselSlides");
+        slides.innerHTML = "";
+
+        imagenes[categoria].forEach((obj, i) => {
+          slides.innerHTML += `
+            <label for="r${i + 1}" class="slide">
+              <img src="${obj.src}">
+              <span class="slide-title">${obj.nombre}</span>
+            </label>`;
+        });
+
+        document.getElementById("r1").checked = true;
+      }
+
+      function lugarActual() {
+        const radio = [...document.querySelectorAll('input[name="carr"]')].find(r => r.checked);
+        const index = parseInt(radio.id.replace("r", "")) - 1;
+        return document.querySelectorAll(".slide-title")[index]?.textContent;
+      }
+
+      document.getElementById("btnVerMas").addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const lugar = lugarActual();
+        if (!lugar) return;
+
+        document.getElementById("overlayTitle").textContent = lugar;
+        document.getElementById("overlayText").textContent = infoLugares[lugar];
+
+        document.getElementById("overlayInfo").classList.add("show");
+      });
+
+      document.getElementById("mini-naturaleza").addEventListener("click", () => cambiarCarrusel("naturaleza"));
+      document.getElementById("mini-arte").addEventListener("click", () => cambiarCarrusel("arte"));
+      document.getElementById("mini-gastro").addEventListener("click", () => cambiarCarrusel("gastronomia"));
+
+      cambiarCarrusel("naturaleza");
+    </script>
+
   </main>
 </body>
+
 </html>

@@ -1,3 +1,18 @@
+@media (min-width: 768px) {
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+.mi-boton,
+.buscador,
+.introduccion,
+.perfil-titulo,
+.perfil-nombre,
+.btn-warning,
+.carousel-css .action a {
+  font-family: "Poppins", sans-serif;
+}
+
 header {
   background-color: #f8f9fa;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -12,6 +27,32 @@ header h1 {
 .mi-header {
   background-color: rgb(255, 240, 173);
 }
+
+.mi-boton {
+  border-radius: 25px;
+}
+
+header {
+  width: 100%;
+}
+
+.mi-header {
+  background-color: rgb(255, 240, 173);
+  width: 100%;
+}
+
+.mi-logo {
+  width: 40px;
+  
+}
+
+.botones-header {
+  margin-left: 800px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 
 main {
   margin-top: 50px;
@@ -33,24 +74,12 @@ main h2 {
 
 main p {
   font-family: "Public Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
   font-size: 20px;
   color: #005910;
 }
 
-.mi-boton {
-  border-radius: 25px;
-}
-
-.mi-logo {
-  margin-left: 550px;
-  width: 40px;
-}
-
 .introduccion {
-  font-family: "Public Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   color: #005910;
   max-width: 420px;
@@ -103,6 +132,11 @@ main p {
   border-radius: 50%;
 }
 
+.circulo:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
 .container-card {
   width: 80%;
   max-width: 1100px;
@@ -127,6 +161,13 @@ main p {
   position: absolute;
   bottom: 4px;
   right: -2px;
+}
+
+.pabloparrilla {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .big-box {
@@ -155,8 +196,29 @@ main p {
   background: #ffe279;
   width: 30%;
   border-radius: 0 20px 20px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
+.perfil-nombre {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.perfil-titulo {
+  font-size: 18px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+.perfil-detalle {
+  font-size: 18px;
+  color: #333;
+  font-family: "Public Sans", sans-serif;
+  text-align: left;
+}
 
 
 .ubicacion-btn i {
@@ -166,67 +228,12 @@ main p {
   font-size: 45px;
 }
 
-.pabloparrilla {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.circulo:hover {
-  transform: scale(1.15);
-  cursor: pointer;
-}
-
-.botones-header {
-  margin-left: 900px;
-}
-
-.carousel {
-  max-width: 700px;
-  margin: 50px auto;
-}
-
-.carousel-img {
-  width: 280px;
-  height: 380px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0.7;
-}
-
-.carousel-item.active .carousel-img {
-  transform: scale(1.15);
-  opacity: 1;
-}
-
-.ver-mas {
-  margin-top: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.carousel-item.active .ver-mas {
-  opacity: 1;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  padding: 10px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .carousel-css {
   position: relative;
-  --small-w: 140px;
-  --mid-w: 260px;
-  --gap: 18px;
+  --small-w: 450px;
+  --mid-w: 850px;
+  --gap: 45px;
+  margin-top: 120px;
 }
 
 .carousel-css input {
@@ -274,24 +281,6 @@ main p {
   z-index: 3;
 }
 
-#r1:checked ~ .slides label[for="r2"],
-#r2:checked ~ .slides label[for="r3"],
-#r3:checked ~ .slides label[for="r4"],
-#r4:checked ~ .slides label[for="r5"] {
-  transform: translateX(-6px) scale(0.95);
-  opacity: 0.7;
-  z-index: 2;
-}
-
-#r2:checked ~ .slides label[for="r1"],
-#r3:checked ~ .slides label[for="r2"],
-#r4:checked ~ .slides label[for="r3"],
-#r5:checked ~ .slides label[for="r4"] {
-  transform: translateX(6px) scale(0.95);
-  opacity: 0.7;
-  z-index: 2;
-}
-
 .carousel-css .action {
   margin-top: 18px;
 }
@@ -300,24 +289,7 @@ main p {
   display: inline-block;
   padding: 0.6rem 1.25rem;
   letter-spacing: 0.12em;
-  font-weight: 600;
-}
-
-@media (max-width: 768px) {
-  .carousel-css {
-    --small-w: 90px;
-    --mid-w: 150px;
-    --gap: 10px;
-  }
-
-  .carousel-css .slides {
-    padding: 12px 6px;
-  }
-
-  .carousel-css .action a {
-    font-size: 0.9rem;
-    padding: 0.5rem 0.9rem;
-  }
+  font-family: "Poppins", sans-serif;
 }
 
 .linea-decorativa {
@@ -329,12 +301,14 @@ main p {
   opacity: 0.9;
   margin-top: -110px;
 }
+
+
 .circle {
   width: 55px;
   height: 55px;
   background: #ffffff;
   border-radius: 50%;
-  overflow: hidden; /* esto mantiene la forma circular */
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -344,5 +318,640 @@ main p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* Contenedor centrado */
+.categorias-mini {
+  padding: 10px 0;
+}
+
+/* Las tarjeticas */
+.cat-mini {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.cat-mini:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Cuando se selecciona */
+.btn-check:checked + .cat-mini {
+  background: #ffd74a;
+  border-color: #f5c500;
+  box-shadow: 0 3px 10px rgba(255, 215, 0, 0.4);
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Degradado negro desde abajo */
+.slide::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  pointer-events: none;
+}
+
+/* Título encima del degradado */
+.slide-title {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 5;
+  text-shadow: 0px 3px 10px rgba(0,0,0,0.6);
+}
+
+/* Para oscurecer suavemente la imagen */
+.slide {
+  position: relative;
+  transition: .3s ease;
+}
+
+.slide.activo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+}
+
+/* Caja con la descripción */
+.descripcion-lugar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 80%;
+  background: rgba(255,255,255,0.92);
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  opacity: 0;
+  pointer-events: none;
+  transition: .35s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+}
+
+/* Cuando está activa */
+.descripcion-lugar.activa {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* Animación para subir título */
+.slide-title {
+  transition: .35s ease;
+}
+
+.slide-title.subido {
+  transform: translateY(-40px);
+}
+.slide.activo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+}
+.descripcion-lugar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 80%;
+  background: rgba(255,255,255,0.92);
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  opacity: 0;
+  pointer-events: none;
+  transition: .35s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+  z-index: 10;
+}
+
+.descripcion-lugar.activa {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+.slide-title {
+  transition: .35s ease;
+}
+
+.slide-title.subido {
+  transform: translateY(-40px);
+}
+
+
+}
+@media (max-width: 768px) {
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+.mi-boton,
+.buscador,
+.introduccion,
+.perfil-titulo,
+.perfil-nombre,
+.btn-warning,
+.carousel-css .action a {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.mi-header {
+  background-color: rgb(255, 240, 173);
+}
+
+.mi-boton {
+  border-radius: 25px;
+}
+
+.mi-logo {
+  margin-left: 350px;
+  width: 40px;
+}
+
+.botones-header {
+  margin-left: 950px;
+}
+
+main {
+  margin-top: 50px;
+}
+
+.imagotipo {
+  width: 540px;
+  margin-left: -600px;
+  margin-top: 0;
+}
+
+main h2 {
+  font-family: "Yeseva One", serif;
+  color: #005412;
+  font-size: 70px;
+  margin-right: 600px;
+  margin-top: 170px;
+}
+
+main p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  color: #005910;
+}
+
+.introduccion {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #005910;
+  max-width: 420px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 1.5;
+  margin-left: 140px;
+  font-weight: 700;
+}
+
+.circulos {
+  position: relative;
+  width: 400px;
+  height: 320px;
+  margin-left: 600px;
+  margin-top: 20px;
+}
+
+.circulo {
   border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.grande {
+  width: 350px;
+  height: 350px;
+  left: 160px;
+  top: -350px;
+}
+
+.mediano {
+  width: 270px;
+  height: 270px;
+  left: 390px;
+  top: -160px;
+}
+
+.pequeno,
+.pequeño {
+  width: 230px;
+  height: 230px;
+  left: 380px;
+  top: -450px;
+}
+
+.circulo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.circulo:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.container-card {
+  width: 80%;
+  max-width: 1100px;
+  margin-top: -40px;
+}
+
+.left-card {
+  background: #fff1ba;
+  width: 70%;
+  border-radius: 20px 0 0 20px;
+}
+
+.user-icon {
+  position: relative;
+}
+
+.status {
+  width: 14px;
+  height: 14px;
+  background: #4caf50;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 4px;
+  right: -2px;
+}
+
+.pabloparrilla {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.big-box {
+  background: white;
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  margin-top: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-publicacion {
+  width: 110%;
+  height: 110%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+  display: block;
+}
+
+.right-card {
+  background: #ffe279;
+  width: 30%;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.perfil-nombre {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.perfil-titulo {
+  font-size: 18px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+.perfil-detalle {
+  font-size: 18px;
+  color: #333;
+  font-family: "Public Sans", sans-serif;
+  text-align: left;
+}
+
+
+.ubicacion-btn i {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 45px;
+}
+
+.carousel-css {
+  position: relative;
+  --small-w: 450px;
+  --mid-w: 850px;
+  --gap: 45px;
+  margin-top: 120px;
+}
+
+.carousel-css input {
+  display: none;
+}
+
+.carousel-css .slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+  padding: 18px 12px;
+  overflow: visible;
+  user-select: none;
+}
+
+.carousel-css .slide {
+  display: block;
+  width: var(--small-w);
+  transition: transform 0.45s ease, width 0.45s ease, opacity 0.45s ease;
+  transform-origin: center;
+  cursor: pointer;
+  opacity: 0.55;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  background: #111;
+}
+
+.carousel-css .slide img {
+
+  width: 100%;
+  height: auto;
+  vertical-align: auto;
+}
+
+#r1:checked ~ .slides label[for="r1"],
+#r2:checked ~ .slides label[for="r2"],
+#r3:checked ~ .slides label[for="r3"],
+#r4:checked ~ .slides label[for="r4"],
+#r5:checked ~ .slides label[for="r5"] {
+  width: var(--mid-w);
+  transform: scale(1.06);
+  opacity: 1;
+  z-index: 3;
+}
+
+.carousel-css .action {
+  margin-top: 18px;
+}
+
+.carousel-css .action a {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  letter-spacing: 0.12em;
+  font-family: "Poppins", sans-serif;
+}
+
+.linea-decorativa {
+  width: 80%;
+  margin: 40px auto 120px;
+  border: none;
+  border-top: 3px solid #008311;
+  border-radius: 3px;
+  opacity: 0.9;
+  margin-top: -110px;
+}
+
+
+.circle {
+  width: 55px;
+  height: 55px;
+  background: #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-circle {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contenedor centrado */
+.categorias-mini {
+  padding: 10px 0;
+}
+
+/* Las tarjeticas */
+.cat-mini {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.cat-mini:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Cuando se selecciona */
+.btn-check:checked + .cat-mini {
+  background: #ffd74a;
+  border-color: #f5c500;
+  box-shadow: 0 3px 10px rgba(255, 215, 0, 0.4);
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Degradado negro desde abajo */
+.slide::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  pointer-events: none;
+}
+
+/* Título encima del degradado */
+.slide-title {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  z-index: 5;
+  text-shadow: 0px 3px 10px rgba(0,0,0,0.6);
+}
+
+/* Para oscurecer suavemente la imagen */
+.slide {
+  position: relative;
+  transition: .3s ease;
+}
+
+.slide.activo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+}
+
+/* Caja con la descripción */
+.descripcion-lugar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 80%;
+  background: rgba(255,255,255,0.92);
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  opacity: 0;
+  pointer-events: none;
+  transition: .35s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+}
+
+/* Cuando está activa */
+.descripcion-lugar.activa {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* Animación para subir título */
+.slide-title {
+  transition: .35s ease;
+}
+
+.slide-title.subido {
+  transform: translateY(-40px);
+}
+.slide.activo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+}
+.descripcion-lugar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 80%;
+  background: rgba(255,255,255,0.92);
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  opacity: 0;
+  pointer-events: none;
+  transition: .35s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+  z-index: 10;
+}
+.descripcion-lugar.activa {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+.slide-title {
+  transition: .35s ease;
+}
+
+.slide-title.subido {
+  transform: translateY(-40px);
+}
 }

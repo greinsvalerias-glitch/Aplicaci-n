@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Configuración de Perfil</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Public+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estiloperfilempresa.css" />
+    <link rel="icon" href="isotipo.png">
+</head>
+
+<body class="bg-white">
+
+    <header class="barra-superior d-flex align-items-center justify-content-between px-4">
+        <div class="d-flex align-items-center gap-3 iconos-izq">
+            <a href="publicaciones.html"><img src="assets/login-icon.svg" class="icono-header"></a>
+            <a href="Configuración.html"><img src="assets/settings.svg" class="icono-header"></a>
+            <a href="mapavirtual.html"><img src="assets/location.svg" class="icono-header"></a>
+            <a href="colecciones.html"><img src="assets/folder.svg" class="icono-header"></a>
+        </div>
+
+        <div class="buscador-container">
+            <input type="text" placeholder="Buscar Locales..." class="buscador">
+        </div>
+    </header>
+
+    <div class="container rounded-3 p-2 text-center" style="margin-top: 80px; background-color: antiquewhite;">
+        <div class="row align-content-center justify-content-center">
+            <div class="col-md-3 col-sm-7 justify-content-center align-content-center">
+                <img src="assets/Pablo-parrilla-icon.jpeg" class=" img-fluid rounded-circle justify-content-center "
+                    style="width: 400px;">
+            </div>
+            <div class="col-md-4 col-sm-6 align-content-center">
+                <p class="m-2 fw-medium "><span id="nombresempresa">Pablo Parrilla</span></p><span id="detalles">
+                    <p class="fw-semibold text-start" id="detalles"> Restaurante tradicional especializado en
+                        parrilladas, asados
+                        y platos gourmet. Ofrecemos una experiencia culinaria auténtica con ingredientes frescos y
+                        recetas
+                        esencialmente variadas.<br>
+                        Nos encontramos ubicados muy cerca del parque de Itagüí.<br>¡Te esperamos!<br><br>
+                        <button class="btn btn-success m-3 rounded-pill" id="botonexperiencia"> <img
+                                src="assets/clock-icon-white.svg" style="height: 20px"> Configurar horario & dirección
+                            <img src="assets/location-icon-white.svg" style="height: 20px"></button>
+                        <button class="btn btn-success m-3 rounded-pill" id="botonexperiencia"> <img
+                                src="assets/gallery-icon-white.svg" style="height: 20px"> Configurar foto de perfil &
+                            portada
+                            <img src="assets/gallery-icon-white.svg" style="height: 20px"></button>
+                        <button class="btn btn-success m-3 rounded-pill" id="botonexperiencia"> <img
+                                src="assets/pencil-edit-icon.svg" style="height: 20px"> Editar nombre y descripción
+                            <img src="assets/pencil-edit-icon.svg" style="height: 20px"></button>
+                    </p>
+                </span>
+
+                </p>
+
+            </div>
+
+            <div class="col-md-3 col-sm-7 justify-content-center align-content-center">
+                <img src="assets/Pablo parrilla.jpeg" class=" img-fluid rounded-start-5 " style="width: 700px;">
+                </span></p>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center m-3 ">
+                <hr class="flex-grow-1 mx-2">
+                <div class="text-center text-secondary" id="card-title"> Menú</div>
+                <hr class="flex-grow-1 mx-2">
+            </div>
+
+            <div class="col-md-7 col-sm-7 justify-content-center align-content-center m-3">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/Pabloparrilla1.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 id="card-title">Cañon Hawaiano</h5>
+                                    <p class="card-text text-light" style="font-size:14px ;">Viene con cañón con salsa
+                                        teriyaki, piña
+                                        calada
+                                        y
+                                        tocienta crocante acompañado de ensalada y una guarnición de su elección</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/Pabloparrilla2.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 id="card-title">Baby Beef</h5>
+                                    <p class="card-text text-light" style="font-size:14px ;">Corte de carne jugoso y
+                                        perfectamente
+                                        sazonado,
+                                        se
+                                        convierte en la estrella de cada comida, deleitando tu paladar con cada bocado.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/Pabloparrilla3.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 id="card-title">Arroz Mixto Especial</h5>
+                                    <p class="card-text text-light" style="font-size:14px ;">Un arroz bien sazonado
+                                        lleno de su buena
+                                        porción de
+                                        proteina: un delicioso mix de diferentes carnes y tocineta.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/Pabloparrilla4.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 id="card-title">Ensalada Pablo Parrilla</h5>
+                                    <p class="card-text text-light" style="font-size:14px ;">La ensalada de la casa,
+                                        ¡animate a probar
+                                        este
+                                        delicioso
+                                        acompañante, un mix de papa, tomate, carne y otros ingredientes secretos!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/Pabloparrilla5.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 id="card-title">Mar y Tierra</h5>
+                                    <p class="card-text text-light" style="font-size:14px ;">Un plato de la casa con un
+                                        toque marino.
+                                        Camarones y otras
+                                        carnes acompañadas de una cama de lechuga, tomate y especias.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="assets/Pabloparrilla6.jpg" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 id="card-title">Cañón con frutos amarillos</h5>
+                                    <p class="card-text text-light" style="font-size:14px ;">Viene con cañón en salsa de
+                                        frutos amarillos
+                                        y tocienta crocante, acompañado de ensalada y una guarnición de su elección.</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+                <button class="btn btn-success m-3 rounded-pill" id="botonexperiencia"> <img
+                        src="assets/gallery-icon-white.svg" style="height: 20px"> Editar Menú
+                    <img src="assets/gallery-icon-white.svg" style="height: 20px"></button>
+            </div>
+            <div class="d-flex align-items-center justify-content-center m-3 ">
+                <hr class="flex-grow-1 mx-2">
+                <div class="text-center text-secondary" id="card-title">Publicaciones</div>
+                <hr class="flex-grow-1 mx-2">
+            </div>
+            <div class="col-md-7 col-sm-7 justify-content-center align-content-center m-3">
+                <button class="btn btn-success m-3 rounded-pill" id="botonexperiencia">Crear nueva publicación
+                    <img src="assets/add-icon2.svg" style="height: 20px"></button>
+
+                <button class="btn btn-danger m-3 rounded-pill" id="botonexperiencia">Eliminar publicación
+                    <img src="assets/delete-icon.svg" style="height: 20px"></button>
+
+            </div>
+            <main class="layout">
+
+                <section class="feed">
+
+                    <article class="post">
+
+                        <header class="post-header">
+                            <a href="perfil-pablo-parrilla.html" class="avatar-link" data-action="usuario-1">
+                                <img class="avatar" src="pablo parrilla.jpg" alt="usuario">
+                            </a>
+
+                            <div class="user-meta">
+                                <div class="user-name">Pablo Parrilla</div>
+                                <div class="user-sub">Hace 2 h · Itagüí</div>
+                            </div>
+                        </header>
+
+                        <div class="gallery">
+                            <figure class="photo"><img src="publi1.jpg" alt="foto"></figure>
+                            <figure class="photo"><img src="publi2.jpg" alt="foto"></figure>
+                            <figure class="photo more"><img src="publi3.jpg" alt="foto"></figure>
+                        </div>
+
+                        <div class="post-description">
+                            <span class="desc-user">pablo_parrilla</span>
+                            <span class="desc-text">Ven a disfrutar un rato con amigos!!! 😄</span>
+                        </div>
+
+                        <div class="post-actions">
+                            <i class="bi bi-hand-thumbs-up" data-act="like"></i>
+                            <i class="bi bi-hand-thumbs-down" data-act="dislike"></i>
+                            <i class="bi bi-chat-left-text" data-act="comment"></i>
+                            <i class="bi bi-share" data-act="share"></i>
+                        </div>
+
+                        <div class="toggle-line"></div>
+
+                        <div class="comments fold">
+
+                            <div class="comment">
+                                <img class="c-avatar" src="https://picsum.photos/seed/c1/44" alt="avatar">
+                                <div class="c-body">
+                                    <div class="c-name">Ana Mejía</div>
+                                    <div class="c-text">Se ve demasiado rico</div>
+                                </div>
+                            </div>
+
+                            <div class="comment">
+                                <img class="c-avatar" src="https://picsum.photos/seed/c2/44" alt="avatar">
+                                <div class="c-body">
+                                    <div class="c-name">Pamela Díaz</div>
+                                    <div class="c-text">Lo recomiendo mucho</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </article>
+                </section>
+            </main>
+        </div>
+
+
+        <script>
+            document.querySelectorAll('.toggle-line').forEach(line => {
+                line.addEventListener('click', () => {
+
+                    const cont = line.nextElementSibling;
+
+                    cont.classList.toggle('fold');
+                });
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+body {
+    background: #ffffff;
+    background-size: contain;
+    background-color: #ffffff;
+    background-image: url("assets/endless-constellation.svg");
+    background-repeat: repeat;
+    background-position: center;
+    }
+
+
+.titulo {
+    font-family: "Yeseva One", serif;
+    font-size: 50px;
+    color: #175300;
+}
+
+.pregunta {
+    font-family: "Poppins", sans-serif;
+    border-bottom: 2px solid #797979;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+label {
+    font-family: "Public Sans", sans-serif;
+}
+
+.cuadro {
+  max-width: 600px;
+  width: 100%;
+  background: #e8e8e8;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+.numero {
+    background: #ffeda6;
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.sombra {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-left: 0;
+    margin: 6px 0;
+    margin-left: 40px;
+}
+
+.btn-enviar {
+    display: block;        
+    width: 100%;           
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgb(14, 71, 0);     
+    color: white;
+    margin-top: 20px;
+}
+
+
