@@ -15,18 +15,18 @@
 
 <body class="bg-white">
 
-   <header class="barra-superior d-flex align-items-center justify-content-between px-4">
-    <div class="d-flex align-items-center gap-3 iconos-izq">
-        <a href="publicaciones.html"><img src="assets/login-icon.svg" class="icono-header"></a>
-        <a href="configuración-montaña-que-piensa.html"><img src="assets/settings.svg" class="icono-header"></a>
-        <a href="mapavirtual.html"><img src="assets/location.svg" class="icono-header"></a>
-        <a href="colecciones.html"><img src="assets/folder.svg" class="icono-header"></a>
-    </div>
+    <header class="barra-superior d-flex align-items-center justify-content-between px-4">
+        <div class="d-flex align-items-center gap-3 iconos-izq">
+            <a href="publicaciones.html"><img src="assets/login-icon.svg" class="icono-header"></a>
+            <a href="configuración-montaña-que-piensa.html"><img src="assets/settings.svg" class="icono-header"></a>
+            <a href="mapavirtual.html"><img src="assets/location.svg" class="icono-header"></a>
+            <a href="colecciones.html"><img src="assets/folder.svg" class="icono-header"></a>
+        </div>
 
-    <div class="buscador-container">
-        <input type="text" placeholder="Buscar Locales..." class="buscador">
-    </div>
-</header>
+        <div class="buscador-container">
+            <input type="text" placeholder="Buscar Locales..." class="buscador">
+        </div>
+    </header>
 
     <div class="container rounded-3 p-2 text-center" style="margin-top: 80px; background-color: antiquewhite;">
         <div class="row align-content-center justify-content-center">
@@ -179,7 +179,7 @@
                         style="background-color: #4B88A2;"><button
                             class="btn btn-danger cerrar-entrada rounded-circle d-flex justify-content-center align-items-center"
                             style="width:45px;height:45px;"><img src="assets/close-icon.svg"
-                                style="width:20px;"></button><a href="perfil-empresa.html"
+                                style="width:20px;"></button><a
                             class="btn btn-success rounded-circle d-flex justify-content-center align-items-center"
                             style="width:45px;height:45px;"><img src="assets/check-icon.svg" style="width:20px;"></a>
                     </div>
@@ -193,10 +193,70 @@
             <div class="text-center text-secondary" id="card-title">Publicaciones</div>
             <hr class="flex-grow-1 mx-2">
         </div>
+        <main class="layout">
 
+            <section class="feed">
+                <article class="post">
+
+                    <header class="post-header">
+                        <a href="perfil-montaña-que-piensa.html" class="avatar-link" data-action="usuario-2">
+                            <img class="avatar" src="assets/la-montaña-que-piensa-logo.jpg" alt="usuario">
+                        </a>
+
+                        <div class="user-meta">
+                            <div class="user-name">La Montaña Que Piensa</div>
+                            <div class="user-sub">Hace 6 h · Itagüí</div>
+                        </div>
+                    </header>
+
+                    <div class="gallery">
+                        <figure class="photo"><img src="publi4.jpg" alt="foto"></figure>
+                        <figure class="photo"><img src="publi5.jpg" alt="foto"></figure>
+                        <figure class="photo more"><img src="publi6.webp" alt="foto"></figure>
+                    </div>
+
+                    <div class="post-description">
+                        <span class="desc-user">montaña_quepiensa</span>
+                        <span class="desc-text">La montaña que piensa te espera… y créeme, tiene mucho que mostrarte.
+                            ¿Te animas a subir?</span>
+                    </div>
+
+                    <div class="post-actions">
+                        <i class="bi bi-hand-thumbs-up"></i>
+                        <i class="bi bi-hand-thumbs-down"></i>
+                        <i class="bi bi-chat-left-text"></i>
+                        <i class="bi bi-share"></i>
+                    </div>
+
+                    <div class="toggle-line"></div>
+
+                    <div class="comments fold">
+
+                        <div class="comment">
+                            <img class="c-avatar" src="https://picsum.photos/seed/c3/44" alt="avatar">
+                            <div class="c-body">
+                                <div class="c-name">Luis F</div>
+                                <div class="c-text">Buen plan para el finde</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </article>
+            </section>
+        </main>
     </div>
 
+    <script>
+        document.querySelectorAll('.toggle-line').forEach(line => {
+            line.addEventListener('click', () => {
 
+                const cont = line.nextElementSibling;
+
+                cont.classList.toggle('fold');
+            });
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
