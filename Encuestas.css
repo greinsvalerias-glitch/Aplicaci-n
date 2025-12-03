@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+  .carousel-css {
+    --small-w: 250px;
+    --mid-w: 400px;
+  }
+
 body {
   background-color: #fff;
   font-family: "Public Sans", sans-serif; /* texto general */
@@ -63,4 +69,65 @@ body {
 
 .mensaje-vacio {
   font-family: "Public Sans", sans-serif !important;
+}
+}
+@media (max-width: 768px) {
+
+  .carousel-css {
+    --small-w: 250px;
+    --mid-w: 400px;
+  }
+
+  body {
+    background-color: #fff;
+    font-family: "Public Sans", sans-serif;
+  }
+
+  .contenido {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-top: 90px;
+  }
+
+  .rosca {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .rosca:hover {
+    transform: scale(1.05);
+  }
+
+  .tarjeta {
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1.2rem;
+    min-width: 250px;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+
+  .mi-header {
+    background-color: rgb(255, 240, 173);
+    height: 70px;
+    padding: 0 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .mi-header img {
+    width: 38px;
+    cursor: pointer;
+  }
+
+  .mi-header .buscador {
+    width: 150px;
+    font-family: "Poppins", sans-serif !important;
+    margin-left: 100px;
+  }
 }

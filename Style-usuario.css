@@ -1,7 +1,7 @@
+@media (min-width: 768px) {
 body {
   background-color: #fff;
 }
-
 
 .contenido {
   padding-top: 48px;
@@ -62,3 +62,70 @@ body {
         width: 260px;
         margin-right: 300px;
     }
+  }
+@media (max-width: 768px) { 
+  body {
+    background-color: #fff;
+  }
+
+  .contenido {
+    padding-top: 48px;
+    padding-bottom: 80px;
+    margin-top: 120px;
+  }
+
+  .rosca {
+    width: 220px;    
+    height: 220px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .tarjeta {
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1.2rem;
+    min-width: 250px;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+
+  /* ----------- HEADER RESPONSIVE ----------- */
+
+  .barra-superior {
+    background-color: rgb(255, 240, 173);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* organiza todo automáticamente */
+    padding: 0 15px;
+  }
+
+  .iconos-izq {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 0 !important; /* quitar margen enorme */
+  }
+
+  .icono-header {
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+  }
+
+  .buscador-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .buscador {
+    padding: 6px 30px 6px 12px;
+    border-radius: 25px;
+    border: 1px solid #cfcfcf;
+    background: #ffffff;
+    width: 160px;           /* tamaño perfecto en móvil */
+    margin-right: 0 !important; /* quitar margen enorme */
+  }
+}

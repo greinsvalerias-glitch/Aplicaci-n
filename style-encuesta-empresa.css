@@ -1,3 +1,4 @@
+@media (min-width: 768px) {
 body {
     background: #ffffff;
     background-size: contain;
@@ -72,5 +73,87 @@ label {
     color: white;
     margin-top: 20px;
 }
+}
+@media (max-width: 768px) {
+
+  body {
+    background: #ffffff;
+    background-image: url("assets/endless-constellation.svg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .titulo {
+    font-family: "Yeseva One", serif;
+    font-size: 34px;    
+    color: #175300;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .pregunta {
+    font-family: "Poppins", sans-serif;
+    border-bottom: 2px solid #797979;
+    padding-bottom: 3px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+  }
+
+  label {
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.95rem;
+  }
+
+  .cuadro {
+    max-width: 600px;  
+    width: 100%;
+    background: #e8e8e8;
+    border-radius: 22px;
+    padding: 25px;      
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 
 
+
+  .numero {
+    background: #ffeda6;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+
+  .sombra {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding-left: 0;
+    margin: 8px 0;
+    margin-left: 15px;  
+
+
+  .btn-enviar {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgb(14, 71, 0);
+    color: white;
+    margin-top: 20px;
+  }
+}
+}
