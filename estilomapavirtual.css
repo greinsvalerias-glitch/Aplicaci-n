@@ -85,23 +85,23 @@
         height: 55px;
     }
 
-    .icono-header {
-        width: 23px;
-        height: 23px;
-        cursor: pointer;
-    }
-
-    .iconos-izq a {
+    .barra-superior {
+        background-color: rgb(255, 240, 173);
+        height: 75px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     .iconos-izq {
-        margin-left: 400px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-left: 600px;
     }
 
     .buscador-container {
-        position: relative;
+        margin-right: 20px;
     }
 
     .buscador {
@@ -109,8 +109,14 @@
         border-radius: 25px;
         border: 1px solid #cfcfcf;
         background: #ffffff;
-        width: 260px;
-        margin-right: 300px;
+        width: 240px;
+        margin-right: 600px;
+    }
+
+    .icono-header {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
     }
 }
 

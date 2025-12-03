@@ -96,23 +96,23 @@
         height: 55px;
     }
 
-    .icono-header {
-        width: 23px;
-        height: 23px;
-        cursor: pointer;
-    }
-
-    .iconos-izq a {
+    .barra-superior {
+        background-color: rgb(255, 240, 173);
+        height: 75px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     .iconos-izq {
-        margin-left: 400px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-left: 600px;
     }
 
     .buscador-container {
-        position: relative;
+        margin-right: 20px;
     }
 
     .buscador {
@@ -120,8 +120,14 @@
         border-radius: 25px;
         border: 1px solid #cfcfcf;
         background: #ffffff;
-        width: 260px;
-        margin-right: 300px;
+        width: 240px;
+        margin-right: 600px;
+    }
+
+    .icono-header {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
     }
 
     th {
@@ -334,27 +340,43 @@
 
 
 
-    .mi-header {
+    .barra-superior {
         background-color: rgb(255, 240, 173);
-        height: 80px;
-        padding-left: 40px;
-        padding-right: 40px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        height: 55px;
     }
 
-    .mi-header .buscador {
-        width: 250px;
-        margin-left: 1050px;
-    }
-
-    .mi-header img {
-        cursor: pointer;
-    }
-
-    .iconos {
-        margin-left: 500px;
+    .barra-superior {
+        background-color: rgb(255, 240, 173);
+        height: 75px;
         display: flex;
-        gap: 13px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .iconos-izq {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-left: 600px;
+    }
+
+    .buscador-container {
+        margin-right: 20px;
+    }
+
+    .buscador {
+        padding: 6px 30px 6px 12px;
+        border-radius: 25px;
+        border: 1px solid #cfcfcf;
+        background: #ffffff;
+        width: 240px;
+        margin-right: 600px;
+    }
+
+    .icono-header {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
     }
 
     th {
