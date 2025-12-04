@@ -1,10 +1,9 @@
 @media (min-width: 768px) {
 
     body {
-        background-size: contain;
+        background-size: cover;
         background-color: #ffffff;
-        background-image: url("assets/endless-constellation.svg");
-        background-repeat: repeat;
+        background-image: url("assets/fondocircularsilueta.svg");
         background-position: center;
     }
 
@@ -27,25 +26,26 @@
         text-align: justify !important;
     }
 
-
+    #imput-group {
+        height: 30px ;
+    }
 
     #detalles {
         font-family: 'Public Sans', sans-serif;
         font-size: 10px;
     }
 
-    #restaurarcotraseña {
-        font-family: 'Public Sans', sans-serif;
+    #numerales {
+        height: 50px !important;
     }
 }
 
 @media (max-width: 768px) {
 
     body {
-        background-size: contain;
+        background-size: cover;
         background-color: #ffffff;
-        background-image: url("assets/endless-constellation.svg");
-        background-repeat: repeat;
+        background-image: url("assets/fondocircularsilueta.svg");
         background-position: center;
     }
 
@@ -67,9 +67,11 @@
 
     #detalles {
         font-family: 'Public Sans', sans-serif;
-        font-size: 8px;
+        font-size: 12px;
+        width: 50px;
     }
 
-  
-      
+    #numerales {
+        height: 30px !important;
+    }
 }

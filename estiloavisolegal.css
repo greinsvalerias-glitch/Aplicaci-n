@@ -1,9 +1,10 @@
 @media (min-width: 768px) {
 
     body {
-        background-size: cover;
+        background-size: contain;
         background-color: #ffffff;
-        background-image: url("assets/Fondo-circular-silueta.svg");
+        background-image: url("assets/endlessconstellation.svg");
+        background-repeat: repeat;
         background-position: center;
     }
 
@@ -26,26 +27,25 @@
         text-align: justify !important;
     }
 
-    #imput-group {
-        height: 30px ;
-    }
+
 
     #detalles {
         font-family: 'Public Sans', sans-serif;
         font-size: 10px;
     }
 
-    #numerales {
-        height: 50px !important;
+    #restaurarcotraseña {
+        font-family: 'Public Sans', sans-serif;
     }
 }
 
 @media (max-width: 768px) {
 
     body {
-        background-size: cover;
+        background-size: contain;
         background-color: #ffffff;
-        background-image: url("assets/Fondo-circular-silueta.svg");
+        background-image: url("assets/endlessconstellation.svg");
+        background-repeat: repeat;
         background-position: center;
     }
 
@@ -67,11 +67,9 @@
 
     #detalles {
         font-family: 'Public Sans', sans-serif;
-        font-size: 12px;
-        width: 50px;
+        font-size: 8px;
     }
 
-    #numerales {
-        height: 30px !important;
-    }
+  
+      
 }

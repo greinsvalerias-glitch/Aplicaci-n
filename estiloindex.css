@@ -1,0 +1,690 @@
+@media (min-width: 768px) {
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+.mi-boton,
+.buscador,
+.introduccion,
+.perfil-titulo,
+.perfil-nombre,
+.btn-warning,
+.carousel-css .action a {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.mi-header {
+  background-color: rgb(255, 240, 173);
+} 
+
+.mi-boton {
+  border-radius: 25px;
+}
+
+header {
+  width: 100%;
+}
+
+.mi-header {
+  background-color: rgb(255, 240, 173);
+  width: 100%;
+}
+
+.mi-logo {
+  width: 40px;
+}
+
+.botones-header {
+  margin-left: 1300px;
+  align-items: center;
+  gap: 15px;
+}
+
+
+main {
+  margin-top: 50px;
+}
+
+.imagotipo {
+  width: 540px;
+  margin-left: -600px;
+  margin-top: 0;
+}
+
+main h2 {
+  font-family: "Yeseva One", serif;
+  color: #005412;
+  font-size: 70px;
+  margin-right: 600px;
+  margin-top: 170px;
+}
+
+main p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  color: #005910;
+}
+
+.introduccion {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #005910;
+  max-width: 420px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 1.5;
+  margin-left: 140px;
+  font-weight: 700;
+}
+
+.circulos {
+  position: relative;
+  width: 400px;
+  height: 320px;
+  margin-left: 600px;
+  margin-top: 20px;
+}
+
+.circulo {
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.grande {
+  width: 350px;
+  height: 350px;
+  left: 160px;
+  top: -350px;
+}
+
+.mediano {
+  width: 270px;
+  height: 270px;
+  left: 390px;
+  top: -160px;
+}
+
+.pequeno,
+.pequeño {
+  width: 230px;
+  height: 230px;
+  left: 380px;
+  top: -450px;
+}
+
+.circulo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.circulo:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.container-card {
+  width: 80%;
+  max-width: 1100px;
+  margin-top: -40px;
+}
+
+.left-card {
+  background: #fff1ba;
+  width: 70%;
+  border-radius: 20px 0 0 20px;
+}
+
+.user-icon {
+  position: relative;
+}
+
+.status {
+  width: 14px;
+  height: 14px;
+  background: #4caf50;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 4px;
+  right: -2px;
+}
+
+.pabloparrilla {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.big-box {
+  background: white;
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  margin-top: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-publicacion {
+  width: 110%;
+  height: 110%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+  display: block;
+}
+
+.right-card {
+  background: #ffe279;
+  width: 30%;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.perfil-nombre {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.perfil-titulo {
+  font-size: 18px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+.perfil-detalle {
+  font-size: 18px;
+  color: #333;
+  font-family: "Public Sans", sans-serif;
+  text-align: left;
+}
+
+
+.ubicacion-btn i {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 45px;
+}
+
+.carousel-css {
+  position: relative;
+  --small-w: 450px;
+  --mid-w: 850px;
+  --gap: 45px;
+  margin-top: 120px;
+}
+
+.carousel-css input {
+  display: none;
+}
+
+.carousel-css .slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+  padding: 18px 12px;
+  overflow: visible;
+  user-select: none;
+}
+
+.carousel-css .slide {
+  display: block;
+  width: var(--small-w);
+  transition: transform 0.45s ease, width 0.45s ease, opacity 0.45s ease;
+  transform-origin: center;
+  cursor: pointer;
+  opacity: 0.55;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  background: #111;
+}
+
+.carousel-css .slide img {
+
+  width: 100%;
+  height: auto;
+  vertical-align: auto;
+}
+
+#r1:checked ~ .slides label[for="r1"],
+#r2:checked ~ .slides label[for="r2"],
+#r3:checked ~ .slides label[for="r3"],
+#r4:checked ~ .slides label[for="r4"],
+#r5:checked ~ .slides label[for="r5"] {
+  width: var(--mid-w);
+  transform: scale(1.06);
+  opacity: 1;
+  z-index: 3;
+}
+
+.carousel-css .action {
+  margin-top: 18px;
+}
+
+.carousel-css .action a {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  letter-spacing: 0.12em;
+  font-family: "Poppins", sans-serif;
+}
+
+.linea-decorativa {
+  width: 80%;
+  margin: 40px auto 120px;
+  border: none;
+  border-top: 3px solid #008311;
+  border-radius: 3px;
+  opacity: 0.9;
+  margin-top: -110px;
+}
+
+
+.circle {
+  width: 55px;
+  height: 55px;
+  background: #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-circle {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.categorias-mini {
+  padding: 10px 0;
+}
+
+.cat-mini {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.cat-mini:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.btn-check:checked + .cat-mini {
+  background: #ffd74a;
+  border-color: #f5c500;
+  box-shadow: 0 3px 10px rgba(255, 215, 0, 0.4);
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.slide::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  pointer-events: none;
+}
+
+.slide-title {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 5;
+  text-shadow: 0px 3px 10px rgba(0,0,0,0.6);
+}
+
+.slide {
+  position: relative;
+  transition: .3s ease;
+}
+
+.slide.activo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+}
+
+.descripcion-lugar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 80%;
+  background: rgba(255,255,255,0.92);
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  opacity: 0;
+  pointer-events: none;
+  transition: .35s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+}
+
+.descripcion-lugar.activa {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.slide-title {
+  transition: .35s ease;
+}
+
+.slide-title.subido {
+  transform: translateY(-40px);
+}
+.slide.activo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(1px);
+  border-radius: 15px;
+}
+.descripcion-lugar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 80%;
+  background: rgba(255,255,255,0.92);
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  opacity: 0;
+  pointer-events: none;
+  transition: .35s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+  z-index: 10;
+}
+
+.descripcion-lugar.activa {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+.slide-title {
+  transition: .35s ease;
+}
+
+.slide-title.subido {
+  transform: translateY(-40px);
+}
+
+
+}
+@media (max-width: 768px) {
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+/* Mantengo tus mismas fuentes */
+.mi-boton,
+.buscador,
+.introduccion,
+.perfil-titulo,
+.perfil-nombre,
+.btn-warning,
+.carousel-css .action a {
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 70px;
+}
+
+header h1 {
+  font-size: 1.1rem;
+}
+
+.mi-header {
+  background-color: rgb(255, 240, 173);
+}
+
+.mi-boton {
+  border-radius: 25px;
+  padding: 6px 14px;
+  font-size: 14px;
+}
+
+/* LOGO */
+.mi-logo {
+  margin-left: 0;
+  width: 28px;
+  margin-top: 10px;
+}
+
+.botones-header {
+  margin-left: 100px;
+  display: flex;
+  gap: 8px;
+}
+
+
+main {
+  margin-top: 30px;
+}
+
+.imagotipo {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+main h2 {
+  font-size: 32px;
+  margin: 20px auto;
+  text-align: center;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+
+main p {
+  font-size: 16px;
+}
+
+.introduccion {
+  font-size: 18px;
+  max-width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  margin-left: 0;
+}
+
+
+.circulos {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 30px auto;
+}
+
+.circulo {
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+}
+
+
+.grande {
+  width: 200px;
+  height: 200px;
+  left: 25px;
+  top: 0px;
+}
+
+
+.mediano {
+  width: 140px;
+  height: 140px;
+  left: 140px;
+  top: 120px;
+}
+
+
+.pequeno,
+.pequeño {
+  width: 120px;
+  height: 120px;
+  left: -10px;
+  top: 130px;
+}
+
+.circulo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+
+.container-card {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+.left-card,
+.right-card {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.big-box {
+  height: auto;
+}
+
+.img-publicacion {
+  width: 100%;
+  height: auto;
+}
+
+
+.perfil-nombre {
+  font-size: 16px;
+}
+
+.perfil-titulo,
+.perfil-detalle {
+  font-size: 15px;
+}
+
+.ubicacion-btn i {
+  font-size: 32px;
+}
+
+
+.carousel-css {
+  --small-w: 220px;
+  --mid-w: 330px;
+  --gap: 15px;
+  margin-top: 60px;
+}
+
+.carousel-css .slide {
+  border-radius: 8px;
+}
+
+.carousel-css .slide img {
+  width: 100%;
+  height: auto;
+}
+
+
+.slide-title {
+  font-size: 14px;
+}
+
+
+.descripcion-lugar {
+  width: 90%;
+  font-size: 14px;
+  padding: 14px;
+}
+
+
+.linea-decorativa {
+  margin-top: 20px;
+  width: 90%;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+}
+
+.cat-mini {
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+}
+

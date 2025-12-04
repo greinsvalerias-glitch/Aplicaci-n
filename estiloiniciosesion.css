@@ -1,0 +1,85 @@
+@media (min-width: 768px) {
+
+  body {
+    background-size: cover;
+    background-color: #ffffff;
+    background-image: url("assets/endlessconstellation.svg");
+    background-position: center;
+  }
+
+  h1 {
+    font-family: 'Poppins', serif;
+  }
+
+  h2 {
+    text-align: center;
+    color: rgb(27, 0, 46);
+    font-family: 'Yeseva One', serif;
+    font-size: 300%;
+  }
+
+  p {
+    text-align: center;
+    color: rgb(27, 0, 46);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  #fotoperfil{
+    align-items: center !important;
+  }
+
+
+
+  #detalles {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 12px;
+  }
+
+  #restaurarcotraseña {
+    font-family: 'Public Sans', sans-serif;
+  }
+}
+  
+
+@media (max-width: 768px) {
+
+  body {
+    background-size: cover;
+    background-color: #ffffff;
+    background-image: url("assets/endlessconstellation.svg");
+    background-position: center;
+  }
+
+  h2 {
+    text-align: center;
+    color: rgb(27, 0, 46);
+    font-family: 'Yeseva One', serif;
+    font-size: 200%;
+  }
+
+  p {
+    text-align: center;
+    color: rgb(27, 0, 46);
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+  }
+    
+
+    #detalles {
+      font-family: 'Public Sans', sans-serif;
+      font-size: 9px;
+    }
+
+    #boton-iniciar{
+       font-size: 13px !important;
+    }
+
+    #fotoperfil{
+    align-items: center !important;
+    height: 200px !important;
+  }
+
+  }
